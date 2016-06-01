@@ -6,7 +6,6 @@
 /*图片滚动*/
 .swiper-container {
 	width: 100%;
-	height: 100%;
         
 }
 .swiper-slide {
@@ -14,7 +13,6 @@
     font-size: 18px;
     background: #fff;
     
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -39,19 +37,18 @@ span.swiper-pagination-bullet {
 	overflow: hidden;
 	width: 100%;
 	margin: 6% auto 0;
-	/*padding: 0 2%;*/
 	text-align: center;
 	box-sizing: border-box;
 }
 #renderings-wrap li {
 	float:left;
-	/*display: inline-block;*/
-	width: 32.1%;
-	margin:0 10px 10px;
+	width: 32%;
+	margin-bottom: 1%;
+	box-sizing: border-box;
 }
 #renderings-wrap li:nth-child(3n+2) {
 	display: inline-block;
-	margin: 0 0 10px;
+	margin: 0 1% 1%;
 
 }
 .box {
@@ -93,18 +90,30 @@ span.swiper-pagination-bullet {
 	top: 10%;
 	width: 80%;
 	height: 80%;
-	vertical-align: middle;
 	background-color: rgba(207,219,0,.6);
-	text-align: center;
+	color: #fff;
+	font-size: 1.8rem;
+	-webkit-webkit-transition: opacity .6;
+	 -moz-webkit-transition: opacity .6;
+	 -ms-webkit-transition: opacity .6;
+	 -o-webkit-transition: opacity .6;
+	 webkit-transition: opacity .6;
 	
+}
+.inner-mask:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 .magnifier {
 	display: inline-block;
-	height: 100%;
+	width: 80%;
 	vertical-align: middle;
 	padding-top: 36px;
 	background: url("../img/drawing-search.png") no-repeat center top;
 }
+
 /*返回顶部*/
 #slider-box {
 	position: absolute;
