@@ -1,0 +1,100 @@
+@charset "uft8";
+/*home*/
+/*中部*/
+#home {
+	width: 75%;
+	min-width: 320px;
+	margin: 0 auto;
+}
+/*中部 第二部分*/
+
+.home-two {
+	/*height: 71%;*/
+	margin-bottom: 12.5%;
+}
+.home-two li {
+	border-bottom: 1px solid #bfbfbf;
+}
+.home-two li:nth-child(1) {
+	border-top: 1px solid #bfbfbf;
+}
+.home-two div{
+	float: left;
+}
+.home-two-pic {
+	position: relative;
+	width: 66%;
+	border-right: 20px solid #e1e1e1;
+	box-sizing: border-box;
+}
+.home-two-pic img {
+	width: 100%;
+}
+.home-two-pic img:first-child {
+	position: absolute;
+	opacity: 0;
+}
+.home-two-pic:hover img:first-child {
+	opacity: 1;
+}
+.home-two-word {
+	width: 31.2%;
+	color: #b4b4b4;
+	text-align: left;
+	vertical-align: middle;
+	margin-left: 12px;
+}
+.home-two-word h2 {
+	float: left;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+}
+.home-two-word p {
+	float: left;	
+}
+
+#home .word-title {
+	background-color: transparent;
+}
+/*.gray {
+	-webkit-filter: grayscale(100%);
+	 filter: grayscale(100%); 
+}*/
+@media screen and (min-width: 960px) {
+	.home-two-li .home-two-pic {
+		float: right;
+		border-right: none;
+		border-left: 20px solid #e1e1e1;
+	}
+	.home-two-li .home-two-word {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.home-two-li h2,
+	.home-two-li p {
+		text-align: right;
+	}
+}
+@media only screen and (max-width: 960px) {
+	#home .word-flag {
+		font-size: 1.8rem;
+	}
+	#home .word-flag img {
+		width: 20%;
+		margin: 0;
+	}
+	#home .home-two-pic {
+		float: none;
+		min-width: 300px;
+		border: none;
+		margin: 20px auto 0;
+	}
+	#home .home-two-word {
+		width: 100%;
+		margin: 20px;
+	}
+	#home .home-two-word h2 {
+		font-size: 1.8rem;
+
+	}
+}

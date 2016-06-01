@@ -1,0 +1,210 @@
+@charset "uft8";
+html,body {
+	height: 100%;
+}
+body {
+	background-color: #f5f5f5;
+	min-width: 320px;
+}
+/*头部 导航栏*/
+header {
+	height: 68px;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 68px;
+	line-height: 68px;
+	background-color: #fefefe;
+	box-shadow: 2px 0 4px #c0c0c0;
+}
+#nav {
+	max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo {
+	float: left;
+	width: 12%;
+	min-width: 120px;
+}
+.logo img {
+	width: 100%;
+	/*height: 100%;*/
+}
+.nav-list {
+	float: right;
+	z-index: 999;
+}
+.nav-list li {
+	float: left;
+	transition:background-color 1s;
+}
+.nav-list li.active,
+.nav-list li:hover {
+	background-color: #cfdb00;
+}
+.nav-list li a {
+	padding: 0 20px;
+	font-size: 1.4rem;
+	color: #3a3a3a;
+}
+
+/* 标题文字 */
+.word-title {
+	/*margin-top: 4px;*/
+	padding-top: 11%;
+	padding-bottom: 6%;
+	text-align: center;	
+	background-color: #fff;
+}
+.word-flag {
+	font-size: 2.2rem;
+	font-weight: 900;
+	color: #616161;
+}
+.word-flag span {
+	display: inline-block;
+	width: 15%;
+	margin: 0 20px;
+	vertical-align: middle;
+	border: 1px solid #cfdb00;
+}
+/* 联系我们部分 */
+.contact-flag {	
+	background-color: #fff;
+	overflow: hidden;
+}
+.word-flag-box {
+	margin-top: 4%;
+	margin-bottom: 6%;
+	text-align: center;	
+	vertical-align: middle;
+}
+.contact-detail {
+	margin-bottom: 6%;
+	text-align: center;
+}
+.contact-detail p,
+.contact-detail a {
+	display: block;
+	font-size: 1.6rem;
+	color: #8f8f8f;
+}
+/*返回顶部*/
+#slider-box {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+	width: 70px;
+	height: 50px;
+	color: transparent;
+	background: url("../img/top.png");
+}
+/*底部*/
+footer {
+	width: 100%;
+	height: 66px;
+	line-height: 66px;
+	text-align: center;
+	font-size: 2rem;
+	color: #fefefe;
+	border-top: 3px solid #cedb26;
+	background-color: #b4b4b4;
+}
+
+/*适应不同屏幕宽度*/
+@media screen and (min-width: 1080px) {
+	.nav-toggle {
+		display: none;
+	}
+}
+@media screen and (max-width: 1080px) and (min-width: 750px) {
+	#nav {
+		width: 95%;
+	}
+	.nav-toggle {
+		display: none;
+	}
+	.nav-list li a {
+		padding: 0 14px;
+	}
+}
+/*手机尺寸*/
+@media screen and (max-width: 750px){
+	/*导航栏*/
+	#nav {
+		width: 95%;
+	}
+	.logo {
+		/*width: 120px;*/
+	}
+	.nav-list {
+		display: none;
+		position: absolute;
+		top: 74px;
+		left: 0;
+		width: 100%;
+		font-size: 1.6rem;
+	}
+	.nav-list li {
+		float: none;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-bottom: 1px solid #dedede;
+		background-color: rgba(255,255,255,.8);
+	}
+	.nav-toggle {
+		display: block;
+	}
+	.nav-toggle {
+		position: relative;
+	    float: right;
+	    padding: 9px 10px;
+	    margin-top: 16px;
+	    margin-bottom: 16px;
+	    background-color: #fff;
+	    border: 1px solid #dedede;
+	    border-radius: 4px;
+	}
+	.icon-bar:nth-child(1) {
+		margin-top: 0;
+	}
+	.icon-bar {
+		display: block;
+	    width: 22px;
+	    height: 2px;
+	    margin-top: 6px;
+	    border-radius: 1px;
+	    background-color: #878787;
+	}
+	/*文字小标题*/
+	.word-flag span {
+		margin: 0;
+	}
+	/*底部变化*/
+	footer {
+		font-size: 1.2rem;
+	}
+}
+/**/
+@media only screen and (max-width: 930px) {
+	.word-flag {
+		font-size: 1.8rem;
+	}	
+	.contact-detail p,
+	.contact-detail a {
+		font-size: 1.2rem;
+	}
+}
+
+
+
+
+

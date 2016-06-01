@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>home</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<header>
+		<nav>
+			<div id="nav">
+				<a class="logo" href="">
+					<img src="img/logo.png" alt="">
+				</a>
+				<ul class="nav-list">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="renderings.html">Renderings</a></li>
+					<li><a href="bim.html">BIM</a></li>
+					<li><a href="3dAnimate.html">3D Anlmate</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<button type="button" class="nav-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+	            </button>
+	        </div>
+		</nav>
+	</header>
+	<!-- /导航栏 -->
+	<!-- 主体内容 -->
+	<section id="home">
+		<div class="word-title"">
+			<p class="word-flag"><span></span>OUR SERVICE<span></span></p>
+		</div>
+		<ul class="home-two clearfix">
+			<li class="clearfix">
+				<div class="home-two-pic">
+					<img src="img/home-1.png" alt="">
+					<img src="img/home-1-g.png" alt="">
+				</div>
+				<div class="home-two-word">
+					<h2>DIGITAL EFFECT DRAWIMG</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae inventore nobis maiores quibusdam ratione architecto!</p>
+				</div>
+			</li>
+			<li class="home-two-li clearfix">
+				<div class="home-two-pic">
+					<img src="img/home-2.png" alt="">
+					<img src="img/home-2-g.png" alt="">
+				</div>
+				<div class="home-two-word">
+					<h2>BUILDING INFORMATION MODELING</h2>
+					<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sapiente sequi, consequuntur, error totam quod!</p>
+				</div>
+								
+			</li>
+			<li class="clearfix">
+				<div class="home-two-pic">
+					<img src="img/home-3.png" alt="">
+					<img src="img/home-3-g.png" alt="">
+				</div>
+				<div class="home-two-word">
+					<h2>3D ANIMATE</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, veniam vel aliquam porro, inventore obcaecati!</p>
+				</div>
+			</li>
+		</ul>		
+	</section>
+	<!-- /主体内容 -->
+	<!-- 联系我们 -->
+	<section class="contact-flag">
+		<div class="word-flag-box">
+			<p class="word-flag">
+				<!-- <img src="img/g-bar.png" alt="">
+				CONTACT US
+				<img src="img/g-bar.png" alt=""> -->
+				<p class="word-flag"><span></span>CONTACT US<span></span></p>		
+			</p>			
+		</div>
+		<div class="contact-detail">
+			<p>Email: eric@shining365.com</p>
+			<a href="tel:8613816903400">Mobile Phone: 86 138 1690 3400</a>
+			<a href="tel:862165896866-403">Tel：+86 21 6589 6866-403 +86 21 6598 3188-304</a>
+		</div>
+	</section>
+	<!-- /联系我们 -->
+	<!-- 底部 -->
+	<footer>
+		<p>Copyright &copy; 1998-2015&nbsp; shining&nbsp; Group</p>
+	</footer>
+	<!-- /底部 -->
+	<!-- js -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/public.js"></script>
+	<script>
+		$(function() {			
+			// $(".home-two li").addClass("gray");
+			$(".home-two li").hover(function() {
+				// var index = $(this).index();
+				$(this).children().eq(0).css({
+					borderColor:"#cedb26",
+				})
+				$(this).children().css({color:"#3c3c3c"});
+			},function() {
+				$(this).children().eq(0).css({
+					borderColor:"#e1e1e1",
+
+				})
+				$(this).children().css({color:"#b4b4b4"});
+
+			});
+
+		});
+	</script>
+</body>
+</html>

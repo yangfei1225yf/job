@@ -1,0 +1,121 @@
+@charset "utf8";
+/*3d animate*/
+#animate-3d {
+	position: relative;
+	padding-bottom: 8%;
+}
+
+/*big 视频*/
+.animate-wrap {
+	overflow: hidden;
+	background-color: #fff;
+}
+.animate-big {
+	position: relative;
+	width: 80%;
+	margin: 0 auto 5%;
+
+}
+.animate-big video,
+.animate-two-video video{
+	width: 100%;	
+}
+.play-btn,.play-btn1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 9%;
+	height: 15%;
+	margin-left: -5%;
+	margin-top: -5%;	
+	color: transparent;
+	background: url("../img/play.png") no-repeat center;
+	background-size: 100% 100%;
+}
+.play-btn {
+	display: none;
+}
+.animate-big-msg {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 3%;	
+	color: #b7b7b7;
+	border-bottom: 10px solid #666;
+	background-color: rgba(0,0,0,.5);
+	box-sizing: border-box;
+}
+.animate-big-msg h2 {
+	margin: 2% 0;
+	font-size: 3rem;
+}
+.animate-big-msg p {
+	float: left;
+	width: 80%;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+}
+/*视频列表*/
+.animate-two {
+	width: 75%;
+	margin: 0 auto;
+}
+.animate-two li {
+	padding-top: 5%;
+	border-bottom: 1px solid #bfbfbf;
+}
+.animate-two-video {
+	float: left;
+	position: relative;
+	width: 50%;
+}
+.animate-two-msg {
+	display: inline-block;
+	width: 50%;
+	padding-left: 4%;
+	text-align: justify;
+	color: #b4b4b4;
+	box-sizing: border-box;
+}
+.animate-two-msg p {
+	display: inline-block;
+	font-size: 1.5rem;
+}
+.animate-two-msg h2 {
+	display: inline-block;
+	margin: 4% 0;
+	font-size: 2.4rem;
+}
+@media screen and (min-width: 960px) {
+	.animate-two li:nth-child(odd) .animate-two-video {
+		float: right;
+	}
+	.animate-two li:nth-child(odd) .animate-two-msg {
+		padding-left: 0;
+		padding-right: 4%;
+	}
+	.animate-two li:nth-child(odd) .animate-two-msg h2,
+	.animate-two li:nth-child(odd) .animate-two-msg p {
+		float: right;
+	}
+}
+@media screen and (max-width: 750px) {
+	.animate-big-msg {
+		
+	}
+	.animate-two-video,
+	.animate-two-msg {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.animate-two-msg p {
+		font-size: 1.2rem;
+	}
+	.animate-two-msg h2 {
+		margin: 4% 0;
+		font-size: 1.8rem;
+	}
+}

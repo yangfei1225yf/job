@@ -1,0 +1,22 @@
+@charset "utf8";
+/*about*/
+#about{
+	width: 50%;
+	margin: 0 auto;
+
+}
+.about-pic {
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 55%;
+	margin-bottom: 11.7%;
+	background: url("../img/about.png") no-repeat center 75%;
+	background-size: 42%;
+}
+.about-word {
+	margin-bottom: 18.5%;
+	font-size: 1.4rem;
+	line-height: 2.6rem;
+	text-align: justify;
+	color: #595757;
+}

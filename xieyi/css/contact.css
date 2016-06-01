@@ -1,0 +1,26 @@
+@charset "utf8";
+/*contact*/
+#contact {
+	width: 62%;
+	margin: 0 auto;
+}
+.contact-pic {
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 42%;
+	margin-bottom: 9%;
+	background: url("../img/contact.png") no-repeat center 60%;
+	background-size: 35%;
+}
+.contact-word {
+	padding-bottom: 36%;
+	text-align: center;
+	line-height: 2.8rem;
+	font-size: 1.8rem;
+	color: #595757;
+	background: url("../img/contact-map.png") no-repeat center bottom;
+	background-size: 100% 72%;
+}
+.contact-detail {
+	margin-top: 6%;
+}

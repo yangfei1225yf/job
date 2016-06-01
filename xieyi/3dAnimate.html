@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>3d animate</title>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/3dAnimate.css">
+</head>
+<body>
+		<!-- 导航栏 -->
+	<header>
+		<nav>
+			<div id="nav">
+				<a class="logo" href="">
+					<img src="img/logo.png" alt="">
+				</a>
+				<ul class="nav-list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="renderings.html">Renderings</a></li>
+					<li><a href="bim.html">BIM</a></li>
+					<li class="active"><a href="3dAnimate.html">3D Anlmate</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<button type="button" class="nav-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+	            </button>
+			</div>
+			
+		</nav>
+	</header>
+	<!-- /导航栏 -->
+	<!-- 主体内容 -->
+	<section id="animate-3d">
+		<div class="word-title"">
+			<p class="word-flag"><span></span>3D ANIMATE<span></span></p>			
+		</div>
+		<!-- big 视频 -->
+		<div class="animate-wrap">
+			<div class="animate-big">
+				<video id="video" src="http://122.72.0.153/hc.yinyuetai.com/uploads/videos/common/F4F6014E67D1819AA5964847178D8059.flv?sc=58cf2e5daa31d6b6" poster="img/3D-big.png"></video>
+				<div class="play-btn">play</div>	
+				<div class="animate-big-msg">				
+					<h2>3D ANIMATE</h2>
+					<p>Lorem ipsum dolor si amet, consectetur adipisicing elit. In nam totam, temporibus veniam sunt commodi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, velit.</p>
+				</div>
+			</div>
+		</div>
+		<!-- 视频列表 -->
+		<ul class="animate-two clearfix">
+			<li class="clearfix">
+				<div class="animate-two-video">
+					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<div class="play-btn1">play</div>
+				</div>								
+					
+				<div class="animate-two-msg">				
+					<h2>3D ANIMATE</h2>
+					<p>Lorem ipsum dolor si amet, consectetur adipisicing elit. In nam totam, temporibus veniam sunt commodi! Lorem ipsum dolor s amet, consectetur adipisicing elit. Odit, velit.</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="animate-two-video">
+					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<div class="play-btn1">play</div>
+				</div>								
+					
+				<div class="animate-two-msg">				
+					<h2>3D ANIMATE</h2>
+					<p>Lorem ipsum dolor si amet, consectetur adipisicing elit. In nam totam, temporibus veniam sunt commodi! Lorem ipsum dolor s amet, consectetur adipisicing elit. Odit, velit.</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="animate-two-video">
+					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<div class="play-btn1">play</div>
+				</div>								
+					
+				<div class="animate-two-msg">				
+					<h2>3D ANIMATE</h2>
+					<p>Lorem ipsum dolor si amet, consectetur adipisicing elit. In nam totam, temporibus veniam sunt commodi! Lorem ipsum dolor s amet, consectetur adipisicing elit. Odit, velit.</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="animate-two-video">
+					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<div class="play-btn1">play</div>
+				</div>								
+					
+				<div class="animate-two-msg">				
+					<h2>3D ANIMATE</h2>
+					<p>Lorem ipsum dolor si amet, consectetur adipisicing elit. In nam totam, temporibus veniam sunt commodi! Lorem ipsum dolor s amet, consectetur adipisicing elit. Odit, velit.</p>
+				</div>
+			</li>		
+		</ul>	
+		<div id="slider-box">顶部</div>		
+	</section>
+	<!-- /主体内容 -->
+	<!-- 联系我们 -->
+	<section class="contact-flag">
+		<div class="word-flag-box">
+			<p class="word-flag"><span></span>CONTACT US<span></span></p>						
+		</div>
+		<div class="contact-detail">
+			<p>Email: eric@shining365.com</p>
+			<a href="tel:8613816903400">Mobile Phone: 86 138 1690 3400</a>
+			<a href="tel:862165896866-403">Tel：+86 21 6589 6866-403 +86 21 6598 3188-304</a>
+		</div>
+	</section>
+	<!-- /联系我们 -->
+	<!-- 底部 -->
+	<footer>
+		<p>Copyright &copy; 1998-2015&nbsp; shining&nbsp; Group</p>
+	</footer>
+	<!-- /底部 -->
+	<!-- js -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/public.js"></script>
+	<script>
+		$(function() {
+			$(".animate-big").hover(function() {
+				$(".animate-big-msg").css({display:"block"});
+				$(".play-btn").css({display:"block"});
+			},function() {
+				$(".animate-big-msg").css({display:"none"});				
+				$(".play-btn").css({display:"none"});
+			})
+			$(".animate-big").on("click",function() {
+				$(".play-btn").css({display:"none"});
+				if($("#video").get(0).paused) {
+					$("#video").get(0).play();
+				}else {
+					$("#video").get(0).pause();
+				}
+			});
+		});
+		// var goTop = document.getElementById("slider-box");
+		// goTop.onclick = function() {
+		// 	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		// 	var raf = window.requestAnimationFrame(up);
+		// 	function up() {
+		// 		scrollTop -= 100;
+		// 		document.body.scrollTop = scrollTop;
+		// 		document.documentElement.scrollTop = scrollTop;
+		// 		raf = window.requestAnimationFrame(up);
+		// 		if(scrollTop <= 0) {
+		// 			window.cancelAnimationFrame(raf)
+		// 		}
+		// 	}
+		// }
+		var goTop = $("#slider-box");
+		goTop.on("click",function() {
+			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+			var raf = window.requestAnimationFrame(up);
+			function up() {
+				scrollTop -= 100;
+				document.body.scrollTop = scrollTop;
+				document.documentElement.scrollTop = scrollTop;
+				raf = window.requestAnimationFrame(up);
+				if(scrollTop <= 0) {
+					window.cancelAnimationFrame(raf)
+				}
+			}
+		})
+	</script>
+</body>
+</html>

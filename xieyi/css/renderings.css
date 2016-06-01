@@ -1,0 +1,118 @@
+@charset "utf8";
+/*rengerings*/
+#renderings {
+	position: relative;
+}
+/*图片滚动*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+        
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.swiper-slide img {
+	width: 100%;
+	height: 100%;	
+}
+span.swiper-pagination-bullet {
+	opacity: 0.6;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: yellow;
+}
+/*瀑布流*/
+#renderings-wrap {
+	overflow: hidden;
+	width: 100%;
+	margin: 6% auto 0;
+	/*padding: 0 2%;*/
+	text-align: center;
+	box-sizing: border-box;
+}
+#renderings-wrap li {
+	float:left;
+	/*display: inline-block;*/
+	width: 32.1%;
+	margin:0 10px 10px;
+}
+#renderings-wrap li:nth-child(3n+2) {
+	display: inline-block;
+	margin: 0 0 10px;
+
+}
+.box {
+	position: relative;
+	margin-bottom: 10px;
+}
+.box img {
+	width: 100%;
+	height: 100%;
+}
+.box:hover div{
+	display: block;
+	
+}
+/*.inner-mask,.magnifier {
+	display: none;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	background-color: rgba(207,219,0,.6);
+	text-align: center;
+
+}
+.inner-mask img {
+	width: 24px;
+	height: 24px;
+}
+.magnifier {
+	display: none;
+	background: url("../img/drawing-search.png") no-repeat center;
+}*/
+
+.inner-mask {
+	display: none;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	vertical-align: middle;
+	background-color: rgba(207,219,0,.6);
+	text-align: center;
+	
+}
+.magnifier {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	padding-top: 36px;
+	background: url("../img/drawing-search.png") no-repeat center top;
+}
+/*返回顶部*/
+#slider-box {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+	width: 70px;
+	height: 50px;
+	color: transparent;
+	background: url("../img/top.png");
+}
