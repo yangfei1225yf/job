@@ -14,7 +14,7 @@
 	position: relative;
 	width: 80%;
 	margin: 0 auto 5%;
-
+	z-index: 0;
 }
 .animate-big video,
 .animate-two-video video{

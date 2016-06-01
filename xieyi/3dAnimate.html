@@ -139,20 +139,6 @@
 				}
 			});
 		});
-		// var goTop = document.getElementById("slider-box");
-		// goTop.onclick = function() {
-		// 	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		// 	var raf = window.requestAnimationFrame(up);
-		// 	function up() {
-		// 		scrollTop -= 100;
-		// 		document.body.scrollTop = scrollTop;
-		// 		document.documentElement.scrollTop = scrollTop;
-		// 		raf = window.requestAnimationFrame(up);
-		// 		if(scrollTop <= 0) {
-		// 			window.cancelAnimationFrame(raf)
-		// 		}
-		// 	}
-		// }
 		var goTop = $("#slider-box");
 		goTop.on("click",function() {
 			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;

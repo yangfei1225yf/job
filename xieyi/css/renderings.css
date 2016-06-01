@@ -5,8 +5,7 @@
 }
 /*图片滚动*/
 .swiper-container {
-	width: 100%;
-        
+	width: 100%;        
 }
 .swiper-slide {
     text-align: center;
@@ -63,26 +62,6 @@ span.swiper-pagination-bullet {
 	display: block;
 	
 }
-/*.inner-mask,.magnifier {
-	display: none;
-	position: absolute;
-	left: 10%;
-	top: 10%;
-	width: 80%;
-	height: 80%;
-	background-color: rgba(207,219,0,.6);
-	text-align: center;
-
-}
-.inner-mask img {
-	width: 24px;
-	height: 24px;
-}
-.magnifier {
-	display: none;
-	background: url("../img/drawing-search.png") no-repeat center;
-}*/
-
 .inner-mask {
 	display: none;
 	position: absolute;
@@ -97,8 +76,7 @@ span.swiper-pagination-bullet {
 	 -moz-webkit-transition: opacity .6;
 	 -ms-webkit-transition: opacity .6;
 	 -o-webkit-transition: opacity .6;
-	 webkit-transition: opacity .6;
-	
+	 webkit-transition: opacity .6;	
 }
 .inner-mask:after {
 	content: "";
@@ -113,7 +91,6 @@ span.swiper-pagination-bullet {
 	padding-top: 36px;
 	background: url("../img/drawing-search.png") no-repeat center top;
 }
-
 /*返回顶部*/
 #slider-box {
 	position: absolute;

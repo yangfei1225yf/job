@@ -34,7 +34,6 @@ nav {
 }
 .logo img {
 	width: 100%;
-	/*height: 100%;*/
 }
 .nav-list {
 	float: right;
@@ -56,7 +55,6 @@ nav {
 
 /* 标题文字 */
 .word-title {
-	/*margin-top: 4px;*/
 	padding-top: 11%;
 	padding-bottom: 6%;
 	text-align: center;	
@@ -140,9 +138,6 @@ footer {
 	/*导航栏*/
 	#nav {
 		width: 95%;
-	}
-	.logo {
-		/*width: 120px;*/
 	}
 	.nav-list {
 		display: none;

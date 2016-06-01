@@ -97,10 +97,6 @@
 		        autoplay: 4000,
 		        autoplayDisableOnInteraction: true
 			});
-			var index = $(this).index();
-			$(".swiper-pagination").find("span").eq(index).css({
-				backgroundColor:"#60d"
-			});
 		});
 
 		var wrap = document.getElementById("renderings-wrap");
@@ -115,22 +111,6 @@
 						minList = list[j];
 					}
 				}
-				//将创建的块添加到高度最小的li
-				// var newDiv = document.createElement("div");
-				// var newDiv1 = document.createElement("div");
-				// var newDiv2 = document.createElement("div");
-				// var newImg = document.createElement("img");
-				// var att = document.createAttribute("src");
-				// att.value = "img/Drawing-"+(i+1)+".png";
-				// newImg.setAttributeNode(att);
-				// newDiv.className = "box";
-				// newDiv1.className = "inner-mask";
-				// newDiv2.className = "magnifier";												
-				// newDiv.appendChild(newDiv1);
-				// newDiv.appendChild(newDiv2);
-				// newDiv.appendChild(newImg);
-				// minList.appendChild(newDiv);
-
 				var box = document.createElement("div");
 				var innerMask = document.createElement("div");
 				var magnifier = document.createElement("span");
