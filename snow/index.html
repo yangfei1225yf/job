@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>snow 多个</title>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		var cw = canvas.width;
+		var ch = canvas.height;
+		var particles = [];
+		function drawBg() {
+			ctx.fillStyle = "#111";
+			ctx.fillRect(0,0,cw,ch);
+		}
+		function rnd(min,max) {
+			return parseInt(Math.random()*(max - min)) + min;
+		}
+		function Particle() {
+			this.radius = rnd(2,5);
+			this.x = rnd(0,cw);
+			this.y = - this.radius;
+			this.color = "#fff";
+			this.color = "rgb("+rnd(0,255)+","+rnd(0,255)+",255)";
+			this.speed = rnd(1,5);// 粒子下落的速度
+			this.direction = rnd(-5,5);
+		}
+		Particle.prototype.draw = function() {
+			ctx.fillStyle = this.color;
+			ctx.beginPath();
+			ctx.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
+			ctx.closePath();
+			ctx.fill();
+		}
+		Particle.prototype.down = function() {
+			// this.x += this.direction;
+			this.y += this.speed;
+			
+		}	
+		// var p = new Particle();	
+		function snow() {
+			ctx.clearRect(0,0,cw,ch);
+			drawBg();
+			if(particles.length < 200) {
+				particles.push(new Particle());
+			}
+			
+			for(var i in particles) {
+				particles[i].draw();
+				particles[i].down();
+				if(particles[i].y > ch) {
+					// 当粒子超出画布的时候，返回到顶部
+					// particles[i].y = - particles[i].radius;
+					// 当粒子超出画布的时候，重新生成
+					particles[i] = new Particle();
+				}
+			}
+			
+			window.requestAnimationFrame(snow);
+		}
+
+		window.requestAnimationFrame(snow);
+	</script>
+</body>
+</html>
+
+
+
