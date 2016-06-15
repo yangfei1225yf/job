@@ -1,0 +1,91 @@
+@media screen and (min-width: 1400px) {
+	html {
+		height: 100%;
+	}
+}
+
+
+header {
+	width: 1092px;
+	height: 74px;
+	padding-top: 62px;
+	margin: 0 auto;
+	position: relative;
+}
+header img:nth-of-type(1) {
+	position: absolute;
+	left: 0;
+	bottom: 14px;
+}
+header img:nth-of-type(2) {
+	padding-left: 122px;
+	position: absolute;
+	bottom: 14px;
+}
+
+/*中部*/
+.content {
+	width: 870px;
+	height: 424px;
+	margin: auto;
+}
+.content_left {
+	width: 464px;
+	float: left;
+}
+.content_right {
+	width: 406px;
+	float: right;
+}
+li {
+	float: left;
+	margin: 1px;
+}
+.content_left li:nth-of-type(1) {
+	padding: 0 10px;
+}
+.content_left li:nth-of-type(3) {
+	padding: 0 10px;
+}
+.content_left li:nth-of-type(5) {
+	padding: 0 10px;
+}
+
+li:hover {
+	animation: bounceAfter 1s linear 1;
+}
+@keyframes bounceAfter {
+	from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+/*底部*/
+footer {
+	width: 880px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 115px;
+	padding-bottom: 18px;
+}
