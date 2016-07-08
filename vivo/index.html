@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>找徐峥</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 加载页面 -->
+	<div id="wrap_1" class="wrap wrap_1">
+		<div id="load_word">
+			<img src="img/loading-2.png" data-src=""alt="">
+		</div>
+	</div>
+	<!-- 游戏陈述 -->
+	<div id="wrap_2" class="wrap wrap_2">
+		<div class="page2">
+			<div class="star">
+				<div class="star_l">
+					<img src="img/star1.png" data-src=""alt="">
+				</div>
+				<div class="star_r">
+					<img src="img/star2.png" data-src=""alt="">
+				</div>
+				<div class="star_b">
+					<img src="img/star3.png" data-src=""alt="">
+				</div>
+			</div>
+			<div class="txt">
+				<p>公元9025</p>
+				<p>外星人为了争夺</p>
+				<p>封印在vivo手机中的神秘能量</p>
+				<p>发起宇宙战乱</p>
+				<p>超人徐峥为了保卫神秘的能量</p>
+				<p>带着手机来到浩瀚宇宙中</p>
+				<p>分身成为8个自己</p>
+				<p>分别保卫8块手机碎片</p>
+				<p>消失在太阳系的八大行星中</p>
+				<p>据说找齐徐峥的8个分身</p>
+				<p>就能启动神秘能量保护地球</p>
+				<p>...</p>
+			</div>
+		</div>
+		<div class="page3">
+			<div class="star_fly">
+				<img src="img/star1.png" data-src=""alt="">
+			</div>
+			<div class="star_r">
+				<img src="img/star2.png" data-src=""alt="">
+			</div>
+			<div class="star_b">
+				<img src="img/star3.png" data-src=""alt="">
+			</div>
+			<div class="star_lb">
+				<img src="img/star4.png" data-src=""alt="">
+			</div>
+			<div class="fly_box">
+				<div class="xu_fly"></div>
+			</div>		
+		</div>
+		<div class="page4">
+			<img src="img/phone-1.png" data-src=""alt="">
+		</div>
+		<div class="page5">
+			<img src="img/phone-2.png" data-src=""alt="">
+		</div>
+		<div class="page6">
+			<div class="block">
+				<img src="img/block-1.png" data-src=""alt="">
+				<img src="img/block-2.png" data-src=""alt="">
+				<img src="img/block-3.png" data-src=""alt="">
+				<img src="img/block-4.png" data-src=""alt="">
+				<img src="img/block-5.png" data-src=""alt="">
+				<img src="img/block-6.png" data-src=""alt="">
+				<img src="img/block-7.png" data-src=""alt="">
+				<img src="img/block-8.png" data-src=""alt="">
+			</div>
+			<div class="star_block">
+				<img src="img/star11.png" data-src=""alt="">
+				<img src="img/star12.png" data-src=""alt="">
+				<img src="img/star13.png" data-src=""alt="">
+				<img src="img/star4.png" data-src=""alt="">
+				<img src="img/star2.png" data-src=""alt="">
+				<img src="img/star9.png" data-src=""alt="">
+				<img src="img/star10.png" data-src=""alt="">
+				<img src="img/star8.png" data-src=""alt="">
+			</div>
+		</div>
+		<div class="page7">
+			<p class="open_word">找齐徐峥 启动能量</p>
+			<div class="arr"></div>
+		</div>
+
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/TweenMax.js"></script>
+	<script>
+		$(function() {
+			var flag = 0;
+			$("#wrap_2").ready(function(){
+				$("#wrap_1").hide();
+				$("#wrap_2").show();
+			})
+			function page2() {
+				$(".txt p").delay(1000);
+				$(".txt p").each(function(index,key) {
+					$(key).delay(500*index).fadeIn(100,function() {
+						if(index == $(".txt p").size()-1) {
+							$(".page2").delay(500).hide();
+							page3();
+						}
+					});
+				})
+			}
+			page2();
+			function page3() {
+				$(".page3").fadeIn(100);
+				page4();
+			}
+			function page4() {
+				$(".page4").delay(3000).fadeIn(100);
+				$(".page4").delay(2000).fadeOut(100);
+				$(".page5").delay(4400).fadeIn(100,function() {
+					$(".page3").delay(1000);
+					$(".page3").hide();				
+					$(".page5").delay(1400).fadeOut(200);
+					$(".star_block").delay(1000).fadeIn(100);
+					$(".block").delay(900).fadeIn(100,function() {
+						$(".page7").delay(2600).fadeIn(300);
+					});
+				});
+			}
+		})
+	</script>
+</body>
+</html>
