@@ -5,8 +5,8 @@ html,body {
 		.wrap {
 			position: relative;
 			max-width: 640px;
-			min-width: 320px;
-			min-height: 568px;
+			/*min-width: 320px;*/
+			/*min-height: 568px;*/
 			width: 100%;
 			height: 100%;
 			background-color: black;
@@ -33,7 +33,7 @@ html,body {
 				transform: rotateZ(0deg);
 			}
 			100% {
-				-webkit-
+				-webkit-transform: rotateZ(-360deg);
 				transform: rotateZ(-360deg);
 			}
 		}
@@ -228,14 +228,13 @@ html,body {
 				background-size: 100% 100%;
 			}
 		}
-		.page4,
-		.page5 {
+		.page4 {
 			display: none;
 			position: absolute;
-			left: 34.375%;
-			top: 32%;
-			width: 31.25%;
-			height: 36%;			
+			left: 35.375%;
+			top: 32.5%;
+			width: 29.25%;
+			height: 35%;			
 			transform-style: preserve-3d;
 		}
 		.page4 img,
@@ -254,6 +253,14 @@ html,body {
 				transform: rotateZ(-360deg) scale3d(1,1,1);
 			}
 		}
+		.page5 {
+			display: none;
+			position: absolute;
+			left: 34.375%;
+			top: 32%;
+			width: 31.25%;
+			height: 36%;
+		}
 		/*碎片*/
 		.block {
 			display: none;
@@ -268,28 +275,28 @@ html,body {
 			position: absolute;
 		}
 		.block img:nth-child(1) {
-			left: 3%;
+			left: 4%;
 			top: 0%;
 			width: 56%;
 			height: 42%;
 			-webkit-animation: chip1 1.5s .5s linear forwards;
 		}
 		.block img:nth-child(2) {
-			left: 42%;
-			top: 3%;
+			right: 2%;
+			top: 2%;
 			width: 56%;
 			height: 37%;
 			-webkit-animation: chip2 1.5s .5s linear forwards;
 		}
 		.block img:nth-child(3) {
-			right: 4%;
-			top: 15%;
-			width: 63%;
-			height: 41%;
+			right: 5%;
+			top: 16%;
+			width: 61%;
+			height: 38%;
 			-webkit-animation: chip3 1.5s .5s linear forwards;
 		}
 		.block img:nth-child(4) {
-			left: 3%;
+			left: 4%;
 			top: 28%;
 			width: 52%;
 			height: 47%;
@@ -310,7 +317,7 @@ html,body {
 			-webkit-animation: chip6 2s .5s linear forwards;
 		}
 		.block img:nth-child(7) {
-			left: 3%;
+			left: 4%;
 			bottom: 2%;
 			width: 56%;
 			height: 37%;
@@ -442,7 +449,7 @@ html,body {
 		.star_block img {
 			position: absolute;
 			width: 18%;
-			height: 10%;
+			/*height: 10%;*/
 		}
 		.star_block img:nth-child(1) {
 			bottom: 10%;
@@ -534,7 +541,7 @@ html,body {
 		}
 		.open_word {
 			position: absolute;
-			bottom: 10%;
+			bottom: 13%;
 			left: 50%;
 			margin-left: -50px;
 			color: #fff;
@@ -553,7 +560,7 @@ html,body {
 		}
 		.arr {
 			position: absolute;
-			bottom: 3%;
+			bottom: 6%;
 			left: 50%;
 			margin-left: -10px;
 			width: 20px;
