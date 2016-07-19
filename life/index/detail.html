@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>详情页</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/public2.css">
+	<link rel="stylesheet" href="../css/index/detail.css">
+</head>
+<body>
+	<!-- 头部按钮 -->
+	<header>
+		<div class="header">
+			<a href="javascript:history.back(-1);" class="back" ></a>
+			<a href="javascript:void(0);" class="store"></a>
+			<a href="javascript:void(0);" class="share"></a>
+		</div>
+	</header>
+	<!-- 产品信息 -->
+	<section class="detail_content">
+		<div class="product_pic">
+			<img src="../img/phone-1.png" alt="">
+		</div>
+		<div class="product_info">
+			<h1>Huawei/华为 荣耀7 全网通4G手机</h1>
+			<div class="product_price">
+				<span>&yen; 11.5</span>
+				原价：<span><del>￥ 12.8</del></span>
+				<span>销量：1200</span>
+			</div>
+			<div class="product_time">
+				<span>限时：2天00分00秒</span>
+				<span>限量：120件</span>
+			</div>
+		</div>
+		<!-- 商品详情 -->
+		<div class="product_contnt">
+			<ul class="product_tab clearfix">
+				<li class="tab_bar"><a href="javascript:void(0);">商品详情</a></li>
+				<li><a href="javascript:void(0);">用户评价</a></li>
+			</ul>
+			<div id="product_details">
+				<div id="p_details" class="p_t">
+					<div class="p_d_pic">
+						<img src="../img/phone-2.png" alt="">
+					</div>
+					<p class="p_d_txt">
+						文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明
+					</p>
+				</div>
+				<!-- 用户评价 -->
+				<div id="user_estimate" class="p_t">
+					<ul>
+						<li>
+							<div class="u_box clearfix">
+								<div class="u_head">
+									<!-- <img src="" alt=""> -->
+								</div>
+								<div class="u_star">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div class="u_date">2010-05-05</div>
+							</div>
+							<p>挺好吃的，下次再买</p>
+						</li>
+					</ul>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- 购物底栏 -->
+	<footer id="footer2">
+		<div class="footer">
+			<a class="shop_car" href="javascript:void(0);"><span>2</span></a>
+			<div class="shop_box">
+				<a class="shop_car_btn" href="javascript:void(0);">加入购物车</a>
+				<a class="shop_pay" href="javascript:void(0);">立即购买</a>
+			</div>		
+		</div>
+	</footer>
+	<!-- 支付蒙层 -->
+	<section id="mask_pay">
+		<div class="vip_pay">
+			<p>充值<span>￥ 100</span>升级VIP会员</p>
+			<p>立刻享受惊爆优惠价</p>
+			<a class="pay_now" href="../my/vip.html">立即支付</a>
+		</div>
+	</section>
+	<!-- 分享 -->
+	<section id="mask_share">
+		<div class="share_box">
+			<p>分享到</p>
+			<ul class="clearfix">
+				<li><a class="ic_share1" href="javascript:void(0);">微信好友</a></li>
+				<li><a class="ic_share2" href="javascript:void(0);">微信朋友圈</a></li>
+				<li><a class="ic_share3" href="javascript:void(0);">新浪微博</a></li>
+			</ul>
+			<a class="share_cancel" href="" >取 消</a>
+		</div>		
+	</section>
+	<!-- 加入购物车蒙层 -->
+	<section id="mask_car">
+		<div class="car_box">
+			<div class="car_del"></div>
+			<div class="pro_info clearfix">
+				<div class="content1_pic">
+					<img src="../img/life_food-1.png" alt="">
+				</div>
+				<div class="content1_info">
+					<p>1沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+					<p>
+						<span>￥ 11.5</span> 原价：<span><del>￥ 12.8</del></span>
+					</p>
+				</div>
+			</div>
+			<div class="pro_weight clearfix">
+				规格：<br>
+				<p class="active">600g</p>
+				<p>800g</p>
+			</div>
+			<div class="pro_num">
+				数量：<br>
+				<span class="num_decrement">–</span><input class="input_num" type="number" value="1"><span class="num_increment">+</span>
+			</div>
+			<a class="car_sure_btn" href="javascript:void(0);" >确 认</a>
+		</div>		
+	</section>
+	<script src="../js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			// 商品详情，用户评价
+			$(".product_tab a").on("click",function() {
+				var index = $(this).index(".product_tab a");
+				$(this).parent().addClass("tab_bar").siblings().removeClass("tab_bar");
+				$("#product_details div.p_t").eq(index).show().siblings().hide();
+			});
+			// 立即购买
+			$(".shop_pay").on("click",function() {
+				$("#mask_pay").show();
+			});
+			$("#mask_pay").click(function() {
+				$("#mask_pay").hide();
+			})
+			// 分享
+			$(".share").click(function() {
+				$("#mask_share").show();
+			});
+			$(".share_cancel").click(function() {
+				$("#mask_share").hide();
+			});
+			// 加入购物车
+			$(".shop_car_btn").on("click",function() {
+				$("#mask_car").show();
+			});
+			// 关闭
+			$(".car_del").click(function() {
+				$("#mask_car").hide();
+			});
+			// 规格
+			$(".pro_weight p").click(function() {
+				$(this).addClass("active").siblings().removeClass("active")
+			});
+			// 数量
+			$(".num_decrement").click(function() {
+			        // $(this).next() 就是当前元素的下一个元素
+			    $(this).next().val(parseInt($(this).next().val()) - 1);
+			    if($(".input_num").val(1)) {
+			    	$(this).val(1)
+			    }
+			});
+			$(".num_increment").click(function() {
+			        // $(this).prev() 就是当前元素的前一个元素
+			   $(this).prev().val(parseInt($(this).prev().val()) + 1);
+			});	
+			// 确认
+			$(".car_sure_btn").click(function() {
+				$(".shop_car span").text($(".input_num").val());
+				$("#mask_car").hide();
+				if($(".shop_car span").text() == $(".input_num").val()) {
+					$(".shop_car span").show();
+				}else if($(".shop_car span").text("")){
+					$(".shop_car span").hide();
+				}
+			});
+			
+
+		})		
+	</script>
+</body>
+</html>

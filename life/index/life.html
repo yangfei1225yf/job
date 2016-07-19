@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>生活家居</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/index/life.css">
+</head>
+<body>
+<!-- 头部 -->
+	<header>
+		<div class="header">
+			<a href="javascript:history.back(-1);" class="back" ></a>
+			<div class="title">生活家居</div>
+		</div>
+	</header>
+	<!-- 大图滚动 -->
+	<section class="slide_out clearfix">
+		<img src="../img/slide-1.png" alt="" style="background-color:transparent">
+		<div class="slide clearfix">
+			<img src="../img/slide-4.png" alt="">
+			<img src="../img/slide-1.png" alt="">
+			<img src="../img/slide-2.png" alt="">
+			<img src="../img/slide-3.png" alt="">
+			<img src="../img/slide-3.png" alt="">
+			<img src="../img/slide-4.png" alt="">
+		</div>
+		<div class="pagination">
+			<span class="dot"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</section>
+	<!-- 分类 -->
+	<section class="class_info_content cleafix">
+		<!-- 商家tab -->
+		<ul class="shop_tab">
+			<li class="active">1活百货</li>
+			<li>2活百货</li>
+			<li>3活百货</li>
+			<li>4活百货</li>
+			<li>5活百货</li>
+			<li>6活百货</li>
+		</ul>
+		<!-- 商家信息列表 -->
+		<ul class="shop_list">
+			<li style="display:block">
+				<ul>
+					<li>
+						<a href="detail.html" class="pro_content clearfix">
+							<div class="content1_pic"><img src="../img/life_food-1.png" alt=""></div>
+							<div class="content1_info">
+								<p>1沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+								<p class="product_price">
+									<span>&yen; 11.5</span>
+									原价：<span><del>￥ 12.8</del></span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>		
+			</li>
+			<li>
+				<ul>
+					<li>
+						<a href="detail.html" class="pro_content clearfix">
+							<div class="content1_pic"><img src="../img/life_food-1.png" alt=""></div>
+							<div class="content1_info">
+								<p>2沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+								<p class="product_price">
+									<span>&yen; 11.5</span>
+									原价：<span><del>￥ 12.8</del></span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li>
+						<a href="detail.html" class="pro_content clearfix">
+							<div class="content1_pic"><img src="../img/life_food-1.png" alt=""></div>
+							<div class="content1_info">
+								<p>3沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+								<p class="product_price">
+									<span>&yen; 11.5</span>
+									原价：<span><del>￥ 12.8</del></span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li>
+						<a href="detail.html" class="pro_content clearfix">
+							<div class="content1_pic"><img src="../img/life_food-1.png" alt=""></div>
+							<div class="content1_info">
+								<p>4沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+								<p class="product_price">
+									<span>&yen; 11.5</span>
+									原价：<span><del>￥ 12.8</del></span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li>
+						<a href="detail.html" class="pro_content clearfix">
+							<div class="content1_pic"><img src="../img/life_food-1.png" alt=""></div>
+							<div class="content1_info">
+								<p>5沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+								<p class="product_price">
+									<span>&yen; 11.5</span>
+									原价：<span><del>￥ 12.8</del></span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li>
+						<a href="detail.html" class="pro_content clearfix">
+							<div class="content1_pic"><img src="../img/life_food-1.png" alt=""></div>
+							<div class="content1_info">
+								<p>6沃之沃 多功能收纳盒内衣盒六件套1沃之沃 多功能收纳盒内衣盒六件套</p>
+								<p class="product_price">
+									<span>&yen; 11.5</span>
+									原价：<span><del>￥ 12.8</del></span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<script src="../js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			// 大图滚动
+			var index = 0;
+			var per = $(".slide img").eq(0).width();
+				
+			$(".pagination span").on("click",function() {
+				index = $(this).index();
+				$(".slide").stop().animate({
+					left: -index*per
+				},500,function() {
+					//判断下标等于倒数第一张时，跳转到
+					if(index > $("#pagination span").size()-1) {
+						index = 0;
+						$("#inner").css({left:0});
+					}
+				});
+				$(this).addClass("dot").siblings().removeClass("dot");
+			});
+			// 商家信息tab
+			$(".shop_tab li").click(function() {
+				// console.log(this);
+				index = $(this).index();
+				$(this).addClass("active").siblings().removeClass("active");
+				$(".shop_list>li").eq(index).show().siblings().hide();
+			})
+		})
+		
+		
+	</script>
+</body>
+</html>

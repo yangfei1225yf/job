@@ -1,0 +1,304 @@
+@charset:"utf8";
+body {
+	background-color: #f2f2f2;
+}
+/*详情页面内容*/
+.detail_content {
+	width: 100%;
+}
+/*商品图片*/
+.product_pic {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+.product_pic:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;	
+	background: -webkit-linear-gradient(top,rgba(180, 180, 180,.5) 0%,rgba(255,255,255,0) 20%,rgba(255,255,255,0) 95%,#f2f2f2 100%);
+}
+.product_pic img {
+	display: block;
+}
+/*商品信息*/
+.product_info {
+	width: 100%;
+	padding: 2% 2% 0;
+	font-size: 1.4rem;
+	color: #666;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.product_info h1 {
+	font-size: 1.6rem;
+	color: #141414;
+	/*单行省略*/
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.product_info div {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;	
+}
+.product_price {
+	border-bottom: 1px solid #e2e2e2;
+}
+.product_price span:nth-child(1) {
+	margin-right: 5%;
+	font-size: 1.6rem;
+	color: #ff3f12;
+}
+.product_info div span:last-child {
+	float: right;
+}
+/*tab切换*/
+.product_contnt {
+	margin-top: 2%;
+	background-color: #fff;
+}
+.product_tab {
+	position: relative;
+	width: 100%;
+	border-bottom: 2px solid #d9d9d9;
+	box-sizing: border-box;
+}
+.product_tab li {
+	float: left;
+	width: 50%;
+
+}
+.product_tab li a {
+	position: relative;
+	display: block;
+	width: 40%;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #666;
+}
+.product_tab .tab_bar a:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #ff3b0e;
+}
+/*商品详情*/
+.p_t {
+	width: 100%;
+	padding:  2% 3%;
+	box-sizing: border-box;
+}
+#p_details .p_d_txt {
+	font-size: 1.4rem;
+	margin-top: 2%;
+}
+/*用户评价*/
+#user_estimate {
+	display: none;
+}
+#user_estimate li {
+	width: 100%;
+	border-bottom: 1px solid #d9d9d9;
+	box-sizing: border-box;
+}
+#user_estimate .u_box {
+	height: 40px;
+	line-height: 40px;
+}
+/*头像*/
+#user_estimate .u_head {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 15px;
+	background-color: #aaa;
+}
+/*星*/
+#user_estimate .u_star {
+	display: inline-block;
+	width: 30%;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.u_star span {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url('../../img/star-2.png') no-repeat;
+	background-size: 200%;
+
+}
+#user_estimate .u_date {
+	float: right;
+	font-size: 1.4rem;
+	color: #666;
+}
+#user_estimate p {
+	font-size: 1.6rem;
+	margin-bottom: 2%;
+}
+
+/*蒙层 vip充值*/
+.vip_pay {
+	position: fixed;
+	left: 10%;
+	top: 30%;
+	/*right: 0;
+	bottom: 0;
+	margin: auto;*/
+	/*margin-left: -50%;
+	margin-top: -50%;*/
+	width: 80%;
+	height: 35%;
+
+	font-size: 2rem;
+	color: #999;
+	background: url('../../img/vip-1.png') no-repeat;
+	background-size: 100%;
+}
+.vip_pay p {
+	text-align: center;
+	color: #8e4e0e;
+}
+.vip_pay p:nth-child(1) {
+	margin-top: 27%;
+}
+.vip_pay p:nth-child(1) span {
+	color: #ee3749;
+}
+.vip_pay a {
+	display: block;
+	width: 40%;
+	height: 32px;
+	margin: 8% auto 0;
+
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	border-radius: 16px;
+	background-color: #a5da35;
+}
+
+/*加入购物车蒙层*/
+.car_box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48%;
+	padding: 3%;
+	font-size: 1.6rem;
+	color: #666;
+	box-sizing: border-box;
+	background-color: #fff;
+
+}
+.car_del {
+	position: absolute;
+	right: 3%;
+	top: 3%;
+	width: 20px;
+	height: 20px;
+	background: url(../../img/x.png) no-repeat center;
+	background-size: 70%;
+}
+.pro_info {
+	width: 100%;
+	box-sizing: border-box;
+}
+.content1_pic {
+	float: left;
+	width: 23.33%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.content1_info {
+	float: left;
+	width: 65%;
+	margin-left: 3%;
+}
+
+.content1_info p:nth-child(1) {
+	line-height: 20px;
+	color: #666;
+	margin-bottom: 5%;
+	/*多行省略*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.content1_info p:nth-child(2) {
+	font-size: 1.2rem;
+	color: #a6a4a4;
+}
+.content1_info p:nth-child(2) span:nth-child(1) {
+	margin-right: 5%;
+	font-size: 1.4rem;
+	color: #ff3f12;
+}
+/*规格*/ 
+.pro_weight {
+	width: 100%;
+	margin: 3% 0;
+}
+.pro_weight p {
+	float: left;
+	width: 17%;
+	margin-right: 2%;
+	text-align: center;
+	border: 1px solid #dbdbdb;
+}
+.pro_weight p.active {
+	background-color: #f29004;
+	color: #fff;
+	border: none;
+}
+/*数量加减*/
+.pro_num {
+	width: 100%;
+}
+.pro_num input,
+.pro_num span {
+	display: inline-block;
+	height: 25px;
+	font-size: 1.5rem;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #dbdbdb;
+}
+.pro_num input {
+	width: 30px;
+	margin: 0 2%;
+}
+.pro_num span {
+	width: 20px;
+	color: #dbdbdb;
+}
+.car_sure_btn {
+	display: block;
+	width: 34%;
+	height: 35px;
+	margin: 10% auto 0;
+
+	line-height: 35px;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #fff;
+	background-color: #f29004;
+	border-radius: 4px;
+
+}
+

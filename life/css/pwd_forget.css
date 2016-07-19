@@ -1,0 +1,65 @@
+/*账号*/
+.user {
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	padding: 4% 0;
+	border: 1px solid #dbdbdb;
+	border-radius: .5rem;
+	font-size: 1.4rem;
+	text-indent: 1rem;
+
+}
+.code_box {
+	width: 100%;
+	margin-bottom: 5%;
+}
+.code {
+	width: 60%;
+	padding: 4% 0;
+	border: 1px solid #dbdbdb;
+	border-radius: .5rem;
+	font-size: 1.4rem;
+	text-indent: 1rem
+}
+/*验证码时间*/
+.code_time {
+	float: right;
+	width: 35%;
+	padding: 3.4% 0;
+	border: 1px solid #dbdbdb;
+	border-radius: .5rem;
+	font-size: 1.4rem;
+	text-align: center;
+	background-color: #ea6c6c;
+	color: #fff;
+}
+.pwd_set {
+	border-radius: .5rem;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 33%;
+}
+.pwd_set input {
+	display: block;
+	padding: 3.4% 0;
+	font-size: 1.4rem;
+	text-indent: 1rem
+}
+.line {
+	display: block;
+	width: 94%;
+	margin: 0 auto;
+	border-top: 1px solid #dbdbdb;
+}
+/*确认按钮*/
+#determine_btn {
+	width: 100%;
+	height: 12%;
+	padding: 4% 0;
+	color: #fff;
+	font-size: 1.7rem;
+	text-align: center;
+	border-radius: .4rem;
+	background-color: #f29004;
+}
+

@@ -1,0 +1,154 @@
+@charset:"utf8";
+html,body {
+	/*height: 100%;*/
+}
+header {
+	height: 40px;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: #f29004;
+	color: #fff;	
+	box-sizing: border-box;
+}
+/*返回*/
+.back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background: url('../img/back-arr.png') no-repeat 35%;
+	background-size: 30%;
+}
+/*页面标题*/
+.title {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 40px;
+	font-size: 1.8rem;
+}
+/*登录，注册页面内容*/
+.login_content {
+	width: 85.33%;
+	margin: 0 auto;
+	margin-top: 40px;
+	box-sizing: border-box;
+}
+/*底栏*/
+footer {
+	height: 50px;	
+}
+#footer ul {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	padding-top: 8px;	
+	background-color: #fff;
+	box-sizing: border-box;
+}
+#footer li {
+	float: left;
+	width: 20%;
+}
+#footer a {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	color: #9f9f9f;
+	font-size: 1.1rem;
+}
+/*底栏图标的设置*/
+#footer a:before {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 23px;
+	margin: 0 auto;	
+	background:url("../../img/icon.png") no-repeat;
+	background-size: 320px 50px;
+}
+#footer .icon.active a {
+	color: #f5ad45;
+}
+/*点击前的颜色*/
+#footer .icon1 a:before {
+	background-position: 2px -28px;
+}
+#footer .icon2 a:before {
+	background-position: -74px -28px;
+}
+#footer .icon3 a:before {
+	background-position: -149px -28px;
+}
+#footer .icon4 a:before {
+	background-position: -225px -28px;
+}
+#footer .icon5 a:before {
+	background-position: -298px -28px;
+}
+/*点击后的颜色*/
+#footer .icon1.active a:before {
+	background-position: 2px 0px;
+}
+#footer .icon2.active a:before {
+	background-position: -74px 0px;
+}
+#footer .icon3.active a:before {
+	background-position: -149px 0px;
+}
+#footer .icon4.active a:before {
+	background-position: -225px 0px;
+}
+#footer .icon5.active a:before {
+	background-position: -298px 0px;
+}
+
+/*大图滚动*/
+.slide_out {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.slide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 600%;
+}
+.slide img {
+	float: left;
+	width: 16.666%;
+}
+/*小圆点*/
+.pagination {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+.pagination span {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	margin: 0 3px;
+	border-radius: 8px;
+	background-color: #333;
+}
+.pagination span.dot {
+	background-color: #f59650;
+}
+

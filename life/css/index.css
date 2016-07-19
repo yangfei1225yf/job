@@ -1,0 +1,23 @@
+.city {
+	float: left;
+	width: 14%;
+	height: 4rem;
+	font-size: 1.5rem;
+	
+}
+.city img {
+	width: 1.2rem;
+	margin-left: .2rem;
+	vertical-align: middle;
+}
+.search {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2rem;
+	height: 4rem;
+	
+}
+.search img {
+	vertical-align: middle;
+}

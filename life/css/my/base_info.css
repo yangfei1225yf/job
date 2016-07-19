@@ -1,0 +1,87 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.base_info_list {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.base_info_list li {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+.base_info_list li a {
+  position: relative;
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  text-indent: 1rem;
+  color: #838383;
+  font-size: 1.6rem;
+}
+.base_info_list .base_list1 a {
+  height: 73px;
+  line-height: 73px;
+}
+/*右箭头*/
+.base_info_list li a:after,
+.base_info_list .base_list1 a:after {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  content: "";
+  width: 10px;
+  height: 20px;
+  background: url('../../img/arr-r.png') no-repeat;
+  background-size: 100%;
+}
+.base_info_content ul:nth-child(1) span {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+}
+.base_list1 a img {
+  width: 58px;
+  height: 58px;
+}
+.base_list3 a img {
+  width: 20px;
+  height: 15px;
+}
+.base_list5 {
+  border-top: 1px solid #e7e7e7;
+}
+
+/*姓名页面 联系方式*/
+.base_name_content {
+	overflow: hidden;
+}
+.base_name,
+.base_tel {
+	display: block;
+	width: 95%;
+	margin: 5.4% auto 22.4%;
+	padding: 4%;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	box-sizing: border-box;
+}
+/*确认按钮*/
+#name_btn {
+	display: block;
+	width: 85%;
+	height: 45px;
+	line-height: 45px;
+	margin: 7% auto;
+	color: #fff;
+	font-size: 1.8rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #f29004;
+}
+
+/*联系方式*/
