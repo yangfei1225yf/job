@@ -1,10 +1,10 @@
 # pc
 ## canvas 
-[雪花](https://yangfei1225yf/job/snow)
+[雪花](https://yangfei1225yf.github.io/job/snow)
 ## xieyi
-  [写意](https://yangfei1225yf/job/xieyi)
+  [写意](https://yangfei1225yf.github.io/job/xieyi)
 ##   
 
 # mobile
 ## life—family
-  [生活一家](https://yangfei1225yf/job/life)
+  [生活一家](https://yangfei1225yf.github.io/job/life)
