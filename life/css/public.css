@@ -27,6 +27,17 @@ header {
 	background: url('../img/back-arr.png') no-repeat 35%;
 	background-size: 30%;
 }
+/*右侧按钮*/
+.right_btn {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 40px;
+	font-size: 1.6rem;
+	color: #fff;
+}
 /*页面标题*/
 .title {
 	position: absolute;
@@ -77,46 +88,45 @@ footer {
 	display: block;
 	width: 25px;
 	height: 23px;
-	margin: 0 auto;	
-	background:url("../../img/icon.png") no-repeat;
-	background-size: 320px 50px;
+	margin: 0 auto;
+	background:url("../../img/icon-all.png") no-repeat;
+	background-size: 216px 226px;
 }
 #footer .icon.active a {
 	color: #f5ad45;
 }
 /*点击前的颜色*/
 #footer .icon1 a:before {
-	background-position: 2px -28px;
+	background-position: -71px -103px;
 }
 #footer .icon2 a:before {
-	background-position: -74px -28px;
+	background-position: -47px -103px;
 }
 #footer .icon3 a:before {
-	background-position: -149px -28px;
+	background-position: -23px -103px;
 }
 #footer .icon4 a:before {
-	background-position: -225px -28px;
+	background-position: -96px -103px;
 }
 #footer .icon5 a:before {
-	background-position: -298px -28px;
+	background-position: 1px -103px;
 }
 /*点击后的颜色*/
 #footer .icon1.active a:before {
-	background-position: 2px 0px;
+	background-position: -71px -79px;
 }
 #footer .icon2.active a:before {
-	background-position: -74px 0px;
+	background-position: -47px -79px;
 }
 #footer .icon3.active a:before {
-	background-position: -149px 0px;
+	background-position: -23px -79px;
 }
 #footer .icon4.active a:before {
-	background-position: -225px 0px;
+	background-position: -96px -79px;
 }
 #footer .icon5.active a:before {
-	background-position: -298px 0px;
+	background-position: 1px -79px;
 }
-
 /*大图滚动*/
 .slide_out {
 	position: relative;

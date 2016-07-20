@@ -4,12 +4,14 @@ body {
 }
 /*注册*/
 .register {
+	/*display: block;
 	position: absolute;
-	right: 3%;
+	right: 0;
 	top: 0;
+	width: 50px;
 	height: 40px;
 	font-size: 1.6rem;
-	color: #fff;
+	color: #fff;*/
 }
 /*logo*/
 .logo {

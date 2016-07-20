@@ -45,6 +45,9 @@ body {
 	padding: 4% 0;
 	border-top: 1px solid #ccc;
 }
+.business_list>li>ul li:first-child {
+	border: none;
+}
 .pro_content {
 	width: 100%;
 	box-sizing: border-box;

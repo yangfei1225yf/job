@@ -4,12 +4,12 @@ body {
 }
 /*升级会员页面*/
 .pay {
-	position: absolute;
+	/*position: absolute;
 	right: 3%;
 	top: 0;
 	height: 40px;
 	font-size: 1.6rem;
-	color: #fff;
+	color: #fff;*/
 }
 .vip_up_content	{
 	width: 100%;

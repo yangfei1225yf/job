@@ -85,17 +85,14 @@ body {
 /*右箭头*/
 .list_box li a:after {
   position: absolute;
-  right: 12px;
-  bottom: 18px;
+  right: 10px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   content: "";
-  display: inline-block;
   width: 10px;
-  height: 10px;
-  border-top: 1px solid #b3b3b3;
-  border-right: 1px solid #b3b3b3;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg) t;
+  height: 20px;
+  background: url('../../img/arr-r.png') no-repeat;
+  background-size: 100%;
 }
 .list_box li.list_1 a:before {
   background-position: -120px 0;

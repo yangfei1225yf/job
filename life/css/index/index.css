@@ -13,19 +13,18 @@
 /*搜索按钮*/
 .search {
 	position: absolute;
-	right: 3%;
+	right: 0;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
-	width: 20px;
+	width: 40px;
 	height: 40px;
 	background: url('../../img/search.png') no-repeat 50%;
-	background-size: 100%;	
+	background-size: 50%;	
 }
-
 /*中部*/
 .content {
 	width: 100%;
-	padding: 2.67%;
+	padding: 2%;
 	background-color: #f2f2f2;
 	box-sizing: border-box;
 }
@@ -33,7 +32,7 @@
 .meun_class a {
 	float: left;
 	width: 32%;
-	height: 44.53%;
+	/*height: 44.53%;*/
 	border-radius: 5px;
 }
 .classify2,
@@ -60,11 +59,14 @@
 	border: 1px solid #eaeaea;
 	box-sizing: border-box;
 }
+.sales span:nth-child(2) {
+	border: none;
+}
 /*广告*/
 .ad li {
 	width: 100%;
 	background-color: #fff;
-	margin-bottom: 7px;
+	margin-bottom: 2.5%;
 }
 .ad p {
 	height: 35px;
