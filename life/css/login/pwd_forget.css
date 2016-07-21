@@ -24,13 +24,14 @@
 .code_time {
 	float: right;
 	width: 35%;
-	padding: 3.4% 0;
-	border: 1px solid #dbdbdb;
-	border-radius: .5rem;
+	padding: 3.8% 0;
+	/*border: 1px solid #dbdbdb;*/
+	border-radius: 5px;
 	font-size: 1.4rem;
 	text-align: center;
 	background-color: #ea6c6c;
 	color: #fff;
+	box-sizing: border-box;
 }
 .pwd_set {
 	border-radius: .5rem;
@@ -39,10 +40,10 @@
 }
 .pwd_set .pwd {
 	display: block;
-	width: 90%;
-	padding: 3.4% 0;
+	width: 94%;
+	margin: 0 auto;
+	padding: 4% 0;
 	font-size: 1.4rem;
-	text-indent: 1rem;
 	border: none;
 }
 .line {
@@ -50,17 +51,5 @@
 	width: 94%;
 	margin: 0 auto;
 	border-top: 1px solid #dbdbdb;
-}
-/*确认按钮*/
-#determine_btn {
-	display: block;
-	width: 100%;
-	height: 12%;
-	padding: 4% 0;
-	color: #fff;
-	font-size: 1.7rem;
-	text-align: center;
-	border-radius: .4rem;
-	background-color: #f29004;
 }
 

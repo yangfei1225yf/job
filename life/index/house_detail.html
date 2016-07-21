@@ -48,7 +48,7 @@
 		</div>
 	</section>
 	<!-- 分享 -->
-	<section id="mask_share">
+	<section id="mask_share" class="mask_set">
 		<div class="share_box">
 			<p>分享到</p>
 			<ul class="clearfix">
@@ -62,13 +62,18 @@
 	<script src="../js/jquery.min.js"></script>
 	<script>
 		$(function() {
+			function eventDefault(e) {
+				e.preventDefault();
+			}
 			// 分享
 			$(".share").click(function() {
 				$("#mask_share").show();
-			})
+				document.addEventListener("touchmove",eventDefault,false);
+			});
 			$(".share_cancel").click(function() {
 				$("#mask_share").hide();
-			})
+				document.removeEventListener("touchmove",eventDefault,false);
+			});
 
 		})		
 	</script>

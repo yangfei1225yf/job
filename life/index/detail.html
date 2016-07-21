@@ -68,6 +68,22 @@
 							</div>
 							<p>挺好吃的，下次再买</p>
 						</li>
+						<li>
+							<div class="u_box clearfix">
+								<div class="u_head">
+									<!-- <img src="" alt=""> -->
+								</div>
+								<div class="u_star">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div class="u_date">2010-05-05</div>
+							</div>
+							<p>挺好吃的，下次再买挺好吃的，下次再买挺好吃的，下次再买挺好吃的，下次再买</p>
+						</li>
 					</ul>
 				</div>
 			</div>		
@@ -84,15 +100,18 @@
 		</div>
 	</footer>
 	<!-- 支付蒙层 -->
-	<section id="mask_pay">
+	<section id="mask_pay" class="mask_set">
 		<div class="vip_pay">
-			<p>充值<span>￥ 100</span>升级VIP会员</p>
-			<p>立刻享受惊爆优惠价</p>
-			<a class="pay_now" href="../my/vip.html">立即支付</a>
+			<div>
+				<p>充值<span>￥ 100</span>升级VIP会员</p>
+				<p>立刻享受惊爆优惠价</p>
+				<a class="pay_now" href="../my/vip.html">立即支付</a>
+			</div>
+			
 		</div>
 	</section>
 	<!-- 分享 -->
-	<section id="mask_share">
+	<section id="mask_share" class="mask_set">
 		<div class="share_box">
 			<p>分享到</p>
 			<ul class="clearfix">
@@ -104,7 +123,7 @@
 		</div>		
 	</section>
 	<!-- 加入购物车蒙层 -->
-	<section id="mask_car">
+	<section id="mask_car" class="mask_set">
 		<div class="car_box">
 			<div class="car_del"></div>
 			<div class="pro_info clearfix">
@@ -139,27 +158,36 @@
 				$(this).parent().addClass("tab_bar").siblings().removeClass("tab_bar");
 				$("#product_details div.p_t").eq(index).show().siblings().hide();
 			});
+			function eventDefault(e) {
+				e.preventDefault();
+			}
 			// 立即购买
 			$(".shop_pay").on("click",function() {
 				$("#mask_pay").show();
+				document.addEventListener("touchmove",eventDefault,false);
 			});
 			$("#mask_pay").click(function() {
 				$("#mask_pay").hide();
-			})
+				document.removeEventListener("touchmove",eventDefault,false);
+			});
 			// 分享
 			$(".share").click(function() {
 				$("#mask_share").show();
+				document.addEventListener("touchmove",eventDefault,false);
 			});
 			$(".share_cancel").click(function() {
 				$("#mask_share").hide();
+				document.removeEventListener("touchmove",eventDefault,false);
 			});
 			// 加入购物车
 			$(".shop_car_btn").on("click",function() {
 				$("#mask_car").show();
+				document.addEventListener("touchmove",eventDefault,false);
 			});
-			// 关闭
+				// 关闭
 			$(".car_del").click(function() {
 				$("#mask_car").hide();
+				document.removeEventListener("touchmove",eventDefault,false);
 			});
 			// 规格
 			$(".pro_weight p").click(function() {

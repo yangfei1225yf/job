@@ -58,6 +58,7 @@ body {
 }
 .list_box li {
   border-top: 1px solid #e0e0e0;
+  box-sizing: border-box;
 }
 .list_box li:first-child {
   border: none;
@@ -65,8 +66,8 @@ body {
 .list_box li a {
   position: relative;
   display: block;
-  height: 46px;
-  line-height: 46px;
+  height: 45px;
+  line-height: 45px;
   color: #1a1a1a;
   font-size: 1.4rem;
   padding-left: 42px;

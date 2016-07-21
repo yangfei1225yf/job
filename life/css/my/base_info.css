@@ -84,22 +84,12 @@ input {
   margin: 6% auto 10%;
   background-color: #fff;
 }
-/*联系方式编辑*/
-  .edit {
-   /* position: absolute;
-    right: 3%;
-    top: 0;
-    height: 40px;
-    font-size: 1.5rem;
-    color: #fff;*/
-  }
 
 /*修改手机号码、修改密码*/
 .base_tel_box input,
 .base_pwd_content input {
   width: 100%;
   height: 45px;
-  /*padding: 0 3%;*/
   font-size: 1.5rem;
   background-color: transparent;;
   border: none;
@@ -204,7 +194,7 @@ input {
 }
 /*确认按钮*/
 .confirm_btn {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   margin: 0;
   left: 7.5%;

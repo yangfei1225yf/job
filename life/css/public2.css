@@ -1,7 +1,4 @@
 @charset:"utf8";
-html,body {
-	/*height: 100%;*/
-}
 /*头部*/
 header {
 	position: fixed;
@@ -126,9 +123,7 @@ footer {
 }
 
 /*蒙层*/
-#mask_pay,
-#mask_share,
-#mask_car {
+.mask_set {
 	display: none;
 	position: fixed;
 	left: 0;
@@ -146,7 +141,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 40%;
+	height: 50%;
 	text-align: center;
 	box-sizing: border-box;
 	background-color: #fff;

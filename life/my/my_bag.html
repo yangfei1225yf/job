@@ -6,40 +6,48 @@
 	<title>我的钱包</title>
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/public.css">
-	<link rel="stylesheet" href="../css/my/vip.css">
+	<link rel="stylesheet" href="../css/my/more.css">
 </head>
 <body>
 	<header>
 		<div class="header">
-			<a class="back" href="mine.html"></a>
+			<a class="back" href="javascript:history.back(-1);"></a>
 			<div class="title">我的钱包</div>
-			<a class="pay right_btn" href="vip.html">账单</a>
+			<a class="right_btn" href="vip.html">账单</a>
 		</div>
 	</header>
-	<div class="vip_up_content">
-		<ul>
-			<li>
-				<p>会员等级说明</p>
-				<p>说明文字说明文字说明文字说明文字说明文字说明文字说明文字</p>
+	<section class="more_content">
+		<div class="help_tel">
+			<p>周一至周五 8:00-6:00</p>
+			<p>4000-8888-08</p>
+			<a href="tel:4000-8888-08">一键拨打</a>
+		</div>
+		<p>常见问题</p>
+		<ul class="problem_list">
+			<li class="">
+				<a href="more_problem.html">
+					<div>1.如何修改收货地址</div>				
+				</a>
 			</li>
-			<li>
-				<p class="vip_line"><span></span><span>VIP会员</span><span></span></p>
-				<ol>
-					<li>1.说明文字</li>
-					<li>2.说明文字</li>
-					<li>3.说明文字</li>
-				</ol>
+			<li class="">
+				<a href="more_problem.html">
+					<div>2.如何修改密码</div>				
+				</a>
 			</li>
-			<li>
-				<p class="vip_line"><span></span><span>股东会员</span><span></span></p>
-				<ol>
-					<li>1.说明文字</li>
-					<li>2.说明文字</li>
-					<li>3.说明文字</li>
-				</ol>
+			<li class="">
+				<a href="more_problem.html">
+					<div>3.如何退款</div>				
+				</a>
 			</li>
 		</ul>
-
-	</div>
+	</section>
+	<script src="../js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			
+		})
+		
+		
+	</script>
 </body>
 </html>
