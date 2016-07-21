@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/public.css">
 	<link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
 <!-- 头部 -->
@@ -18,7 +19,27 @@
 		</div>
 	</header>
 	<!-- 大图滚动 -->
-	<section class="slide_out clearfix">
+	<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<img src="img/slide-1.png" alt="">
+	            </div>
+	            <div class="swiper-slide">
+	            	<img src="img/slide-2.png" alt="">
+	            </div>
+	            <div class="swiper-slide">
+	            	<img src="img/slide-3.png" alt="">
+	            </div>
+	            <div class="swiper-slide">
+	            	<img src="img/slide-4.png" alt="">
+	            </div>
+	            <div class="swiper-slide">
+	            	<img src="img/slide-2.png" alt="">
+	            </div>
+	        </div>
+    		<div class="swiper-pagination"></div>
+   	</div>
+	<!-- <section class="slide_out clearfix">
 		<img src="img/slide-1.png" alt="" style="opacity:0;">
 		<div class="slide clearfix">
 			<img src="img/slide-1.png" alt="">
@@ -35,7 +56,7 @@
 			<span></span>
 			<span></span>
 		</div>
-	</section>
+	</section> -->
 	<!-- 分类 -->
 	<div class="content cleafix">
 		<div class="meun_class clearfix">
@@ -102,9 +123,21 @@
 		</ul>
 	</footer>
 	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 	<script>
 		$(function() {
 			// 大图滚动
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        calculateHeight:true,//自动适应高度
+		        loop:true,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        centeredSlides: true,
+		        autoplay: 4000,
+		        autoplayDisableOnInteraction: true
+			});
+
 			var index = 0;
 			var per = $(".slide img").eq(0).width();
 
@@ -122,16 +155,6 @@
 					$(this).addClass("dot").siblings().removeClass("dot");
 				})
 
-
-
-
-			// var timer = setInterval(function() {
-			// 	index++;
-				// if(index > $(".slide img").size() -1) {
-
-				// }
-		
-			// },2000)
 			// 底栏图标变化
 			$("#footer li").on("click",function() {
 				$(this).addClass("active").siblings().removeClass("active");
