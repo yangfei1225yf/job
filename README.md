@@ -3,8 +3,8 @@
   [雪花](https://yangfei1225yf.github.io/job/snow)
 ## xieyi
   [写意](https://yangfei1225yf.github.io/job/xieyi)
-## enegryGD  
-  [活力广东](https://yangfei1225yf.github.io/job/enegryGD)
+## energyGD  
+  [活力广东](https://yangfei1225yf.github.io/job/energyGD)
 ## clock
    [时钟](https://yangfei1225yf.github.io/job/clock)
 #             mobile
