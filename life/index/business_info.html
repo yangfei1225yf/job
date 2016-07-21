@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/public.css">
 	<link rel="stylesheet" href="../css/index/business_info.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
 </head>
 <body>
 <!-- 头部 -->
@@ -17,24 +18,26 @@
 		</div>
 	</header>
 	<!-- 大图滚动 -->
-	<section class="slide_out clearfix">
-		<img src="../img/slide-1.png" alt="" style="opacity:0">
-		<div class="slide clearfix">
-			<img src="../img/slide-1.png" alt="">
-			<img src="../img/slide-2.png" alt="">
-			<img src="../img/slide-3.png" alt="">
-			<img src="../img/slide-4.png" alt="">
-			<img src="../img/slide-2.png" alt="">
-			<img src="../img/slide-1.png" alt="">
-		</div>
-		<div class="pagination">
-			<span class="dot"></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</section>
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<img src="../img/slide-1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="../img/slide-2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="../img/slide-3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="../img/slide-4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="../img/slide-2.png" alt="">
+            </div>
+        </div>
+		<div class="swiper-pagination"></div>
+   	</div>
 	<!-- 分类 -->
 	<section class="class_info_content cleafix">
 		<!-- 商家tab -->
@@ -71,24 +74,19 @@
 		</ul>
 	</section>
 	<script src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.jquery.min.js"></script>
 	<script>
 		$(function() {
 			// 大图滚动
-			var index = 0;
-			var per = $(".slide img").eq(0).width();
-				
-			$(".pagination span").on("click",function() {
-				index = $(this).index();
-				$(".slide").stop().animate({
-					left: -index*per
-				},500,function() {
-					//判断下标等于倒数第一张时，跳转到
-					if(index == $("#pagination span").size()-1) {
-						index = 0;
-						$(".slide").css({left:0});
-					}
-				});
-				$(this).addClass("dot").siblings().removeClass("dot");
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        calculateHeight:true,//自动适应高度
+		        loop:true,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        centeredSlides: true,
+		        autoplay: 4000,
+		        autoplayDisableOnInteraction: true
 			});
 			// 商家信息tab
 			$(".business_tab li").click(function() {

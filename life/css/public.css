@@ -167,39 +167,7 @@ span.swiper-pagination-bullet {
 	opacity: 0.6;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background: yellow;
+	background: #f29004;
 }
-/*.slide_out {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-}
-.slide {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 600%;
-}
-.slide img {
-	float: left;
-	width: 16.666%;
-}
-小圆点
-.pagination {
-	position: absolute;
-	bottom: 5px;
-	width: 100%;
-	text-align: center;
-}
-.pagination span {
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	margin: 0 3px;
-	border-radius: 8px;
-	background-color: #333;
-}
-.pagination span.dot {
-	background-color: #f59650;
-}*/
+
 

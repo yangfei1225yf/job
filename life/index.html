@@ -20,43 +20,25 @@
 	</header>
 	<!-- 大图滚动 -->
 	<div class="swiper-container">
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide">
-	            	<img src="img/slide-1.png" alt="">
-	            </div>
-	            <div class="swiper-slide">
-	            	<img src="img/slide-2.png" alt="">
-	            </div>
-	            <div class="swiper-slide">
-	            	<img src="img/slide-3.png" alt="">
-	            </div>
-	            <div class="swiper-slide">
-	            	<img src="img/slide-4.png" alt="">
-	            </div>
-	            <div class="swiper-slide">
-	            	<img src="img/slide-2.png" alt="">
-	            </div>
-	        </div>
-    		<div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<img src="img/slide-1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="img/slide-2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="img/slide-3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="img/slide-4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+            	<img src="img/slide-2.png" alt="">
+            </div>
+        </div>
+		<div class="swiper-pagination"></div>
    	</div>
-	<!-- <section class="slide_out clearfix">
-		<img src="img/slide-1.png" alt="" style="opacity:0;">
-		<div class="slide clearfix">
-			<img src="img/slide-1.png" alt="">
-			<img src="img/slide-2.png" alt="">
-			<img src="img/slide-3.png" alt="">
-			<img src="img/slide-4.png" alt="">
-			<img src="img/slide-3.png" alt="">
-			<img src="img/slide-1.png" alt="">
-		</div>
-		<div class="pagination">
-			<span class="dot"></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</section> -->
 	<!-- 分类 -->
 	<div class="content cleafix">
 		<div class="meun_class clearfix">
@@ -134,26 +116,9 @@
 		        paginationClickable: true,
 		        spaceBetween: 30,
 		        centeredSlides: true,
-		        autoplay: 4000,
+		        autoplay: 3000,
 		        autoplayDisableOnInteraction: true
 			});
-
-			var index = 0;
-			var per = $(".slide img").eq(0).width();
-
-				$(".pagination span").on("click",function() {
-					index = $(this).index();
-					$(".slide").stop().animate({
-						left: -index*per
-					},500,function() {
-						//判断下标等于倒数第一张时，跳转到
-						if(index == $(".pagination span").size()-1) {
-							index = 0;
-							$(".slide").css({left:0});
-						}
-					});
-					$(this).addClass("dot").siblings().removeClass("dot");
-				})
 
 			// 底栏图标变化
 			$("#footer li").on("click",function() {
