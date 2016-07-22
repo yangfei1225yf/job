@@ -1,6 +1,6 @@
 7.18  项目八天
 	一、所用知识点：
-		1.p标签内span,水平居中可用vertical-align:middle;
+		1.p标签内span,垂直居中可用vertical-align:middle;
 		2.多行省略
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
