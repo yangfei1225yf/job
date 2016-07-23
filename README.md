@@ -8,7 +8,7 @@
 ## clock
    [时钟](https://yangfei1225yf.github.io/job/clock)
 ## jingyingba
-	[精英吧](https://yangfei1225yf.github.io/job/jingyingba)  
+   [精英吧](https://yangfei1225yf.github.io/job/jingyingba)  
 #             mobile移动端
 ## life—family
    [生活一家](https://yangfei1225yf.github.io/job/life)
