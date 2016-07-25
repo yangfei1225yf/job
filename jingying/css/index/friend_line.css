@@ -1,0 +1,49 @@
+@charset "utf8";
+
+.friend_line_main {
+  width: 1224px;
+  margin: 0 auto 50px;
+}
+.partner,
+.friend_line {
+  width: 100%;
+  box-sizing: border-box;
+}
+.partner h2,
+.friend_line h2 {
+  margin: 40px 0 20px;
+  font-size: 22px;
+  color: #333;
+}
+.partner ul {
+  background-color: #fff;
+  padding: 50px 15px 20px 30px;
+}
+.partner ul li {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+.partner ul a {
+  display: block;
+  width: 151px;
+  height: 48px;
+}
+.partner ul a img {
+  width: 100%;
+}
+.friend_line ul {
+  background-color: #fff;
+  padding: 50px 0px 30px 30px;
+}
+.friend_line ul li {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+.friend_line ul a {
+  font-size: 14px;
+  color: #333;
+}

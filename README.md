@@ -7,8 +7,8 @@
    [活力广东](https://yangfei1225yf.github.io/job/energyGD)
 ## clock
    [时钟](https://yangfei1225yf.github.io/job/clock)
-## jingyingba
-   [精英吧](https://yangfei1225yf.github.io/job/jingyingba)  
+## jingying
+   [精英吧](https://yangfei1225yf.github.io/job/jingying)  
 #             mobile移动端
 ## life—family
    [生活一家](https://yangfei1225yf.github.io/job/life)

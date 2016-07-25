@@ -1,0 +1,70 @@
+
+@charset "utf-8";
+body {
+  background-color: #f5f5f5;
+}
+.new_study_main {
+  width: 1224px;
+  margin: 30px auto;
+}
+.new_study_main .left_bar {
+  float: left;
+  width: 172px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+}
+.new_study_main .left_bar p {
+  width: 100%;
+  line-height: 45px;
+}
+.new_study_main .right_content {
+  float: right;
+  width: 1040px;
+  padding: 36px 40px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.new_list {
+  width: 100%;
+  box-sizing: border-box;
+}
+.new_list a {
+  display: block;
+  width: 98%;
+  margin: 0 auto;
+  line-height: 45px;
+  text-indent: 3rem;
+  color: #333;
+}
+.new_list a.active {
+  border-left: 2px solid #33b574;
+  background-color: #f5f5f5;
+}
+.right_content h1 {
+  font-size: 26px;
+}
+.right_content .article_info {
+  line-height: 30px;
+  font-size: 13px;
+  color: #999;
+}
+.right_content .article_info span:last-child {
+  margin-left: 20px;
+}
+.right_content img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: auto;
+}
+.right_content .article {
+  border-top: 1px solid #e8e8e8;
+  padding: 38px 0;
+}
+.right_content .article p {
+  margin-bottom: 38px;
+  text-indent: 3.2rem;
+}
+/*# sourceMappingURL=new_study.css.map */
