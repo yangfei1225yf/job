@@ -1,5 +1,6 @@
-@charset "utf8";
-
+body {
+  background-color: #f5f5f5;
+}
 .friend_line_main {
   width: 1224px;
   margin: 0 auto 50px;
@@ -47,3 +48,4 @@
   font-size: 14px;
   color: #333;
 }
+/*# sourceMappingURL=friend_line.css.map */

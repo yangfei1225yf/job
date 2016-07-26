@@ -54,4 +54,52 @@ $(function(){
 		$(this).addClass("activeBTN").siblings().removeClass("activeBTN")
 	})
 	}
+	
+//	合作机构
+	$(".he_right").click(function(){
+		$(".hezuo ul").stop().animate({
+			left:0
+		},200,function(){
+			$(".hezuo ul").css({left:-167})
+			$(".hezuo ul li:last").insertBefore($(".hezuo ul li:first"))
+
+		})
+
+		})
+		$(".he_left").click(function(){
+		$(".hezuo ul").stop().animate({
+			left:-334
+		},200,function(){
+			$(".hezuo ul").css({left:-167})
+			$(".hezuo ul li:first").insertBefore($(".hezuo ul li:last"))
+
+		})
+		})
+	
+	
+//	滚轴事件
+		function scroll_lachuan(){
+		var w =( document.body.offsetWidth -1224 )/2-80
+		if(document.body.offsetWidth<1224){
+			$(".scroll").css({
+				right:-60
+			})
+			}else if(document.body.offsetWidth>1224){
+				$(".scroll").css({
+				right:w
+			})
+		}
+		}	
+		scroll_lachuan()
+			
+		window.onresize=function(){
+		scroll_lachuan()
+		
+		}
+		$(".scroll_btn").click(function(){
+		$("html,body").animate({
+			scrollTop:0
+		},200)
+		})
+	
 })	
