@@ -1,308 +1,231 @@
-@charset "utf8";
-body {
+body{
 	background-color: #f5f5f5;
 }
-.school_main {
+a{
+	text-decoration: none;
+	color: #333;
+}
+.main{
 	width: 1224px;
-	margin: 0 auto;
-	color: #333;
+	margin: auto;
+	margin-bottom: 30px;
 }
-.school_main h3 {
-	font-size: 16px;
-}
-/*学校左侧部分*/
-.school_left {
-	float: left;
-	width: 916px;
-}
-/*学校信息*/
-#school_info {
-	width: 100%;
-	padding: 25px 20px;
-	background-color: #fff;
-	box-sizing: border-box;
-}
-.s_logo {
-	float: left;
-	width: 340px;
-	height: 206px;
-}
-.s_logo img {
-	display: block;
-	width: 100%;
-}
-.s_info {
-	float: left;
-	margin-left: 25px;
-}
-.s_info h1 {
-	font-size: 24px;
-}
-.s_info_box {
-	position: relative;
-	width: 100%;
-	margin: 25px 0 30px;
-	color: #666;
+/*分类导航*/
+.daohang{
+	width: 1204px;
+	height: 80px;
+	padding-top: 20px;
+	padding-left: 20px;
 	font-size: 14px;
-	border: 1px solid #e8e8e8;
+	background-color: white;
+	margin-bottom: 30px;	
 }
-/*学习地址*/
-.s_add {
-	position: relative;
-	line-height: 70px;
-	text-indent: 2.6rem;
-}
-.s_add:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-top: -7px;
-	width: 30px;
-	height: 14px;
-	background: url('../../img/index/15ico_bg.png') no-repeat center -629px;
-}
-/*学校评价 星*/
-.s_star {
-	position: absolute;
-	left: 10px;
-	top: -8px;
-	width: 140px;
-	background-color: #fff;
-}
-.s_star span {
+.daohang_left{
 	float: left;
-	width: 16px;
-	height: 16px;
-	margin-left: 10px;
-	background: url('../../img/30ico_bg.png') no-repeat;
-	background-position: -7px -587px;
+	width: 65px;
+	height: 100px;
 }
-.s_star .star5 {
-	margin-right: 10px;
-	background-position: -7px -561px;
-}
-/*报名人数*/
-.s_num {
-	position: absolute;
-	left: 10px;
-	bottom: -10px;
-	height: 22px;
-	padding: 0 10px;
-	background-color: #fff;
-}
-.s_num span {
-	font-size: 22px;
-	color: #29b572;
-}
-/*预约咨询*/
-.reservation {
-	display: inline-block;
-	width: 128px;
-	line-height: 36px;
-	text-align: center;
-	font-size: 16px;
-	color: #ea9b65;
-	border: 1px solid #e89c66;
-}
-
-/*学校具体介绍*/
-.school_left_btm {
-	width: 100%;
-	margin: 30px 0;
-	background-color: #fff;
-
-}
-/*学校tab*/
-.info_tab {
-	width: 580px;
-	box-sizing: border-box;
-}
-.info_tab li {
-	float: left;
-	width: 25%;
-	border-top: 4px solid transparent;
-}
-.info_tab li.active {
-	border-top: 4px solid #3faf7a;
-}
-.info_tab a {
+.daohang_left a:nth-child(2){
 	display: block;
-	text-align: center;
-	line-height: 66px;
-	color: #333;
-	font-size: 16px;
-	box-sizing: border-box;
+	margin-top: 20px;
 }
-/*本科课程*/
-.class_list {
-	width: 100%;
-	box-sizing: border-box;
-}
-.class_list li {
-	width: 100%;
-	padding: 25px 0;
-	border-bottom: 1px solid #e8e8e8;
-}
-.class_list a {
-	color: #333;
-}
-.class_list li:last-child {
-	border-bottom: none;
-}
-/*课程名称、状态、现价*/
-.class_info1 {
-	margin-bottom: 10px;
-}
-.class_info1 span:first-child {
-	font-size: 15px;
-}
-.class_info1 span:nth-child(2) {
-
-	margin-left: 10px;
-	font-size: 12px;
-	border-radius: 2px;
-}
-.class_info1 span.online {
-	color: #29b572;
-	border: 1px solid #29b572;
-	
-}
-.class_info1 span.offline {
-	color: #ea9b65;
-	border: 1px solid #ea9b65;
-}
-.class_info1 span:last-child {
-	float: right;
-	font-size: 20px;
-	color: #ea9b65;
-}
-/*课程相关：学校、时长等*/
-.class_info2 p {
-	position: relative;
+.daohang_left a:before{
+	content:"";
+	width: 15px;
+	height: 20px;
 	float: left;
-	margin-right: 30px;
+	background: url(../../img/index/15ico_bg.png);
+	margin-top: 1px;
+	margin-right: 14px;
+}
+.daohang_left a:nth-child(1):before{
+	background-position: 0px -799px;
+}
+.daohang_left a:nth-child(2):before{
+	background-position: 0px -824px;
+}
+.daohang_right ul{
+	width: 1124px;
+	height: 41px;
+}
+.daohang_right ul li{
+	float: left;
+	margin-left: 47px;
+}
+.daohang_active{
+	color:#00b26c;
+}
+
+/*tab切换*/
+.offline_tab{
+	float: left;
+	width: 904px;
+	background-color: white;
+}
+.offline_tab_U{
+	width: 100%;
+	/*height: 45px;*/
+	box-sizing: border-box;
+}
+.offline_tab_U li{
+	float: left;
+	width: 110px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;	
 	font-size: 14px;
+	border-top: 4px solid white;
+	box-sizing: border-box;
+}
+.offline_tab_U li.active {
+	color: #29b572;
+	border-top: 4px solid #29b572;
+}
+/*列表内容*/
+.offline_tab_N{
+	padding: 0 13px;
+}
+.offline_tab_N>ul{
+	display: none;
+	/*background-color: white;	*/
+}
+.school_list {
+	padding: 15px 12px;
+	border: 1px solid transparent;
+}
+.school_list a{
+	width: 700px;
+	height: 90px;
+}
+.school_list:hover .s_span_active {
+	color:#29b572;
+}
+.school_list:hover {
+	border: 1px solid #e0e0e0;
+}
+.school_list_img{
+	float: left;
+	width: 165px;
+	height: 90px;
+	margin-right: 20px;
+}
+.school_list_div {
+	float: left;
+	width: 500px;
 	color: #999;
 }
-.class_info2 .c_info1,
-.class_info2 .c_info2 {
-	text-indent: 2rem;
-}
-.class_info2 .c_info1:before,
-.class_info2 .c_info2:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-top: -6px;
-	width: 12px;
-	height: 12px;
-	background: url('../../img/index/15ico_bg.png') no-repeat;	
-}
-.class_info2 .c_info1:before {
-	background-position: center -609px;
-}
-.class_info2 .c_info2:before {
-	background-position: -1px -681px;
-}
-.class_info2 .c_info3,
-.class_info2 .c_info4 {
-	margin-left: 30px;
-}
-.class_info2 .c_info3 span,
-.class_info2 .c_info4 span {
-	color: #3faf7a;
-}
-.class_info2 .c_info5 {
-	float: right;
-	margin-right: 0;
-}
-/*学校简介*/
-.info_list {
-	padding: 0 30px;
-}
-.info_list>div {
-	display: none;
-}
-.school_profile h3 {
-	line-height: 80px;
-	text-align: center;
+.s_l_name {
+	width: 100%;
+	font-size: 18px;
 	font-weight: 900;
+	color: #333333;
 }
-.school_profile p {
-	line-height: 36px;
-	text-indent: 3.2rem;
-	font-size: 14px;
+.s_l_name span {
+	margin-left: 5px;
+	font-size: 15px;
+	color: #999;
 }
-/*官方相册*/
-.photo_list {
-	width: 100%;
-	margin-bottom: 30px;
-	box-sizing: border-box;
-}
-.photo_list li {
+/*星*/
+.s_l_star {
 	float: left;
-	width: 196px;
-	height: 130px;
-	margin-right: 23px;
-	margin-bottom: 25px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
-.photo_list li:nth-child(4n) {
-	margin-right: 0;
+.s_l_star>span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	background: url(../../img/index/15ico_bg.png) no-repeat;	
 }
-.photo_list li img {
-	display: block;
+.s_l_star .star1 {
+	background-position: 1px -960px;
+}
+.s_l_star .star2 {
+	background-position: 1px -939px;
+}
+.s_l_star i {
+	margin-left: 10px;
+	font-size: 12px;
+}
+.s_l_star i span {
+	color: #29b572;
+}
+.s_addr {
+	display: inline-block;
 	width: 100%;
-	height: 100%;
+	font-size: 14px;
+	text-indent: 2rem;
+	background: url(../../img/index/15ico_bg.png) no-repeat;
+	background-position: 0px -626px;	
 }
 
-
-/*学校右侧部分*/
+/*页码*/
+.off_num{
+	width: 600px;
+	height: 35px;
+	margin: 30px auto;
+	line-height: 35px;
+	font-size: 13px;
+	text-align: center;
+}
+.off_num>a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;	
+	border:1px solid #cccccc;
+}
+.off_num>a:first-child {
+	width: 60px;
+}
+.off_num>a:last-child {
+	width: 60px;
+}
+.s_page {
+	display: inline-block;
+}
+.s_page a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;	
+	border:1px solid #cccccc;
+}
+.s_page a.active {
+	color: #fff;
+	background-color: #00b26c;
+}	
+/*学校列表 右侧部分*/
 .school_right {
 	float: right;
-	width: 296px;
+	width: 300px;
+	/*height: 490px;*/
+	background-color: white;
 }
-.school_right>div {
-	background-color: #fff;
-	padding: 25px 15px;
+
+.school_right_h{
+	height: 50px;
+	width: 270px;
+	line-height: 50px;
 }
-.school_right h3 {
-	position: relative;
-	margin-bottom: 25px;
-	text-indent: 2.4rem;	
+.school_right_h a:nth-child(1){
+	font-size: 16px;
 }
-.school_right h3:before {
+.school_right_h a:nth-child(1):before{
 	content: "";
-	position: absolute;
-	left: 0;
+	float: left;
 	width: 20px;
-	height: 100%;
-	background: url('../../img/index/15ico_bg.png') no-repeat;
+	height: 20px;	
+	background: url(../../img/index/15ico_bg.png) no-repeat center;
+	background-position: 0px -652px;
+	margin-top: 15px;
 	
 }
-/*学校地址 地图*/
-.school_map h3:before {
-	background-position: 2px -822px;
-}
-.school_map div {
-	width: 265px;
-	height: 160px;
-}
-/*热门学校*/
 .school_hot {
 	position: relative;
-	margin-top: 15px;
-}
-.school_hot h3:before {
-	background-position: 4px -651px;
+	margin: 0 15px;
 }
 .school_more {
-	position: absolute;
-	right: 15px;
-	top: 28px;
+	float: right;
 	color: #666;
 	font-size: 12px;
 }
@@ -324,7 +247,7 @@ body {
 /*热门学校  信息*/
 .hot_info {
 	float: left;
-	width: 145px;
+	width: 150px;
 	margin-left: 10px;
 	
 }
@@ -337,22 +260,7 @@ body {
 	white-space: nowrap;/*强制文本不换行*/
 	overflow: hidden;/*隐藏溢出文本*/
 }
-/*热门学校 评价*/
-.s_star1 {
-	width: 100%;
-	margin: 8px 0;
-}
-.s_star1 span {
-	float: left;
-	width: 12px;
-	height: 11px;
-	margin-right: 7px;
-	background: url('../../img/index/15ico_bg.png') no-repeat;
-	background-position: -2px -962px;
-}
-.s_star1 span.star5 {
-	background-position: -1px -941px;
-}
+
 .hot_info p {
 	font-size: 12px;
 	color: #999;
@@ -360,4 +268,3 @@ body {
 .hot_info p span:nth-child(1) {
 	margin-right: 12px;
 }
-

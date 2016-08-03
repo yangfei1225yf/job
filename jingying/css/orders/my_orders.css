@@ -1,0 +1,319 @@
+@charset "utf-8";
+body {
+  background-color: #f5f5f5;
+}
+.my_orders_main {
+  width: 1224px;
+  margin: 30px auto;
+  color: #333;
+}
+/*左*/
+.my_orders_left {
+  float: left;
+  width: 170px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.my_list {
+  width: 100%;
+ 
+}
+.my_list a {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 45px;
+  text-indent: 3rem;
+  color: #333;
+  background-color: #fff;
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+}
+.my_list a.active {
+  border-left: 2px solid #33b574;
+  background-color: #fafafa;
+}
+/*右*/
+.my_orders_right {
+  float: right;
+  width: 1040px;
+  margin-bottom: 30px; 
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.my_orders_right h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.my_orders {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  
+}
+.my_orders_tab li {
+  display: inline-block;
+  width: 125px;
+  text-align: center;
+  padding: 25px 0 40px;
+  box-sizing: border-box;
+}
+.my_orders_tab li.active {
+  color: #33b574;
+  border-top: 4px solid #33b574;
+
+}
+/*订单*/
+.my_orders_box {
+  display: none;
+  width: 980px;
+  margin: 0 auto;
+  font-size: 14px;
+  border: 1px solid #e8e8e8;
+}
+.my_orders_box input[type=checkbox] {
+  
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  width: 14px;
+  height: 14px;
+  background: url('../../img/index/15ico_bg.png') no-repeat 0px -73px;
+}
+.my_orders_box input[type=checkbox]:checked {
+  background: url('../../img/index/15ico_bg.png') no-repeat 0px -96px;
+}
+/*表头*/
+.my_orders_head {
+  line-height: 40px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.my_orders_head>div,
+.my_orders_info dt>div {
+  float: left;
+  text-align: center;
+}
+.my_orders_info input[type=checkbox] {
+  float: left;
+  margin-top: 51px;
+}
+.o_head1 {
+  margin-left: 15px;
+}
+.o_head2{
+  width: 380px;
+}
+.o_head {
+  width: 100px;
+}
+/*每条订单*/
+.my_orders_info {
+  padding: 0 15px;
+}
+.my_orders_info dt 
+{
+  width: 100%;
+  height: 116px;
+  line-height: 116px;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+.o_info1 {
+  float: left;
+  /*height: 116px;*/
+  color: #333;
+  margin-left: 10px;
+}
+.o_info1 .o_pic {
+  float: left;
+  width: 110px;
+  height: 65px;
+  margin-top: 25px;
+}
+.o_info1 .o_pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.o_info1 .o_name {
+  float: right;
+  width: 260px;
+  margin-left: 8px;
+  margin-top: 25px;
+}
+.o_info1 .o_name p {
+  text-align: left;
+  line-height: 18px;
+}
+.o_name1 {
+  margin-bottom: 12px;
+}
+.o_name2 {
+  color: #999;  
+}
+.o_info {
+  width: 100px;
+}
+.o_info2 {
+  margin-left: 26px;
+}
+.o_info6 {
+  height: 116px;
+  line-height: 116px;
+}
+.o_info6 span {
+  display: inline-block;
+  width: 70px;
+  height: 28px;
+  line-height: 28px; 
+  box-sizing: border-box;
+}
+.o_info6 span.o_set1 {
+  color: #fff;
+  background-color: #ea9b65;
+}
+.o_info6 span.o_set2 {
+  color: #ea9b65;
+  border: 1px solid #ea9b65;
+}
+
+/*退款、评价*/
+.my_orders_info dd {
+  display: none;
+  padding: 25px;
+  background-color: #fafafa;
+}
+.my_orders_info input {
+  font-size: 14px;
+  padding: 0 5px;
+}
+.refund>div,
+.evaluate>div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.refund>div>p,
+.evaluate>div>p {
+  float: left;
+  color: #666;
+}
+.refund p span,
+.evaluate p span {
+  color: red;
+}
+.refund textarea,
+.evaluate textarea {
+  width: 560px;
+  height: 120px;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  resize: none;
+}
+.refund_list3>span,
+.evaluate_list3>span {
+  color: #666;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.refund_list1 div {
+  position: relative;
+  float: left;
+  width: 218px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e8e8e8;
+  background: url('../../img/index/15ico_bg.png') no-repeat 96% -564px;
+  background-color: #fff;
+
+}
+.refund_list1 div input {
+  width: 190px;
+  line-height: 28px;
+  border: none;
+}
+.refund_list1 ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fefefe;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+.refund_list1 ul li {
+  padding: 0 5px;
+  font-style: 12px;
+  border-bottom: 1px solid #e8e8e8; 
+
+}
+.refund_list1 ul li:hover {
+  background-color: #fafafa;
+}
+.refund_list2 input {
+  float: left;
+  width: 208px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e8e8e8;
+}
+
+/*评分*/
+.evaluate_star {
+  float: left;
+  width: 140px;
+}
+.evaluate_star span {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background: url('../../img/30ico_bg.png') no-repeat;
+  background-position: -7px -587px;
+}
+.evaluate_star .star5 {
+  margin-right: 10px;
+  background-position: -7px -561px;
+}
+.evaluate_list2 ul {
+  float: left;
+  width: 560px;
+  padding: 10px;
+  padding-bottom: 0;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.evaluate_list2 ul li {
+  display: inline-block;
+  padding: 4px 5px;
+  margin-bottom: 10px;
+  color: #3faf7a;
+  border: 1px solid #3faf7a;
+  box-sizing: border-box;
+}
+.evaluate_list2 ul li:hover {
+  color: #fff;
+  background-color: #c2c2c2;
+  border: 1px solid #666;
+}
+
+
+/*提交退款、评价发表*/
+.refund_btn,
+.evaluate_btn {
+  display: block;
+  width: 110px; 
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #3faf7a;
+}
+.refund_btn {
+  margin-left: 82px;
+}
+.evaluate_btn {
+  margin-left: 54px;
+}

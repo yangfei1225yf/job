@@ -1,0 +1,222 @@
+@charset "utf-8";
+body {
+	background-color: #f5f5f5;
+}
+.content {
+	width: 1224px;
+	margin: auto;
+}
+	.header {
+		width: 1194px;
+		height: 330px;
+		padding: 15px;
+		margin: auto;
+		background-color: #fff;
+	}
+	.header_class {
+		width: 100%;
+		height: 244px;
+		margin-bottom: 15px;
+	}
+	.header_class a {
+		float: left;
+	}
+	.hc_detail {
+		float: right;
+		width: 750px;
+		height: 100%;
+	}
+	.hc_detail h2 {
+		font-size: 24px;
+		margin-top: 15px;
+		margin-bottom: 140px
+	}
+	.hc_detail p {
+		display: inline-block;
+		width: 72px;
+		text-align: center;
+		padding:0 15px;
+	}
+	.hc_detail .p1 {
+		width: 71px;
+		border-right: 1px solid #e8e8e8;
+		/*f0f0f0*/
+	}
+	.header_bar {
+		width: 100%;
+		height: 80px;
+		background-color: #b3b3b3;
+		overflow: hidden;
+	}
+	.bar {
+		width: 1154px;
+		height: 10px;
+		margin:auto;
+		border-radius: 5px;
+		background-color: #fff;
+		position: relative;
+	}
+	.bar_color {
+		width: 24px;
+		height: 100%;
+		border-top-left-radius:5px;
+		border-bottom-left-radius:5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #46d993;
+	}
+	.bar_list {
+		margin: 12px 0;
+	}
+	.bar_list span {
+		color: #fff;
+		display: inline-block;
+		margin-left:70px;
+		position: relative;
+	}
+	.bar_list span:after {
+		position: absolute;
+		top:18px;
+		left:26px;
+		content:"";
+		width: 0;
+	    height: 0;
+	    border-left: 8px solid transparent;
+	    border-right: 8px solid transparent;
+	    border-bottom: 10px solid #fff;
+	}
+	.bar_tip {
+		position: absolute;
+		left: 0;
+		top: 15px;
+		width: 35px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		border-radius: 2px;
+		color: #fff;
+		background-color: #6b6b6b;
+	}
+	.bar_tip:after {
+		position: absolute;
+		top:-5px;
+		left:12px;
+		content:"";
+		width: 0;
+	    height: 0;
+	    border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+	    border-bottom: 8px solid #6b6b6b;
+	}
+/****************************************/
+	.content_class {
+		width: 100%;
+		margin:30px 0;		
+	}
+	.class_left {
+		float: left;
+		padding: 30px 20px;
+		width: 880px;
+		background-color: #fff;
+		}
+		.class_left h2 {
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			font-size: 18px;
+			background-color:#f5f5f5;
+		}
+		.class_left h2 span {
+			display:inline-block;
+			width: 70px;
+			height: 100%;
+			text-align: center;
+			color: #fff;
+			background-color: #3faf7a;
+
+		}
+		.class_detail {
+			width: 100%;
+			height: 100px;
+			overflow: hidden;
+			opacity: 0.6;
+			position: relative;
+		}
+		.class_detail p {
+			width: 810px;
+			margin-top: 35px;
+			margin-left: 70px;
+		}		
+		.class_detail a {
+			float: left;
+			width: 630px;
+			font-size: 14px;
+			color: #333333;
+			position: relative;	
+		}
+		.class_detail a:after {
+			position: absolute;
+			top:2px;
+			left:-40px;
+			content:"";
+			width: 22px;
+		    height:16px;
+		    background: url("../../img/cl_play.png");
+		}
+		.class_detail .pm {
+			float: right;
+			color:#333333;
+		}
+		.class_study {
+			display: none;
+			width: 110px;
+			height: 36px;
+			line-height: 36px;
+		    text-align: center;
+		    font-size: 14px;
+		    border-radius:18px;
+			border: 1px solid #3faf7a;
+			color: #3faf7a;
+			position: absolute;
+			right: 0;
+			top: 30px;
+			background-color: #fff;
+		}
+		.class_detail:hover,.class_detail:hover .class_study{
+			opacity:1;
+			display: block;
+		}
+	.class_right {
+		float: right;
+		width: 290px;
+		height: 430px;
+		background-color: #fff;
+	}
+	.class_right h2 {
+		width: 100%;
+		height: 45px;
+		line-height: 45px;
+		font-size: 16px;
+		color: #fff;
+		text-indent: 16px;
+		background-color: #3faf7a;
+	}
+	.class_right table {
+		text-align: center;
+		font-size: 14px;
+		width: 100%;
+	}
+	.class_right table tr {
+		height: 30px;
+		line-height: 30px;
+	}
+	.class_right table th:nth-of-type(2) {
+		border-left: 1px solid #e9e9e9;
+		border-right: 1px solid #e9e9e9;
+	}
+	.class_right table td {
+		width: 72px;
+		height: 30px;
+		color:#999999;
+	}

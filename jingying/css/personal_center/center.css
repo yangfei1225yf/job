@@ -1,0 +1,369 @@
+@charset "utf-8";
+html,body {
+	background-color: #f5f5f5;
+}
+/*************中部内容***************/
+
+.section {
+	width: 1224px;
+	margin: 0 auto;
+	/*background-color: #fff;*/
+}
+	/*******内容一******/
+	.sec {
+		width: 100%;
+		height: 180px;
+		margin-top: 30px;
+		background-color: #fff;
+	}
+	/*********左边*******/
+		.sec_left {
+			width: 170px;
+			height: 180px;
+			float: left;
+			vertical-align: middle;
+			text-align: center;
+			border-right: 1px solid #e8e8e8;
+		}
+		.sec_left img {
+			margin-top: 20px;
+		}
+		.sec_left p,.sec_left span {
+			font-size: 14px;
+		}
+		.sec_left p {
+			margin: 10px auto;
+		}
+		.sec_left span {
+			display: block;
+			width: 36px;
+			height: 14px;
+			color: #808080;
+			margin: 0 auto;
+			line-height: 14px;
+			border: 1px solid #cccccc;
+		}
+	/*******右边********/
+		.sec_right {
+			width: 1053px;
+			float: right;
+		}
+		.sec_p {
+			margin-left: 25px;
+			margin-top: 20px;
+			color: #999999;
+			font-size: 14px;
+		}
+		.sec_list {
+			margin-left:30px;
+		}
+		.sp1{
+			float: left;
+			display: block;
+			width: 540px;
+			color: #7d7d7d;
+		}
+		.sp2 {
+			display: inline-block;
+			width: 105px;
+		}
+		.sp2,.sp3 {
+			color: #666666;
+		}
+		.spg {
+			display:inline-block;
+			width: 50px;
+			height: 6px;
+			vertical-align: middle;
+			background-color: #cccccc;
+		}
+		.sp3 {
+			float: right;
+			margin-right: 70px;
+		}
+		.sec_list li {
+			font-size: 14px;
+			margin-top: 16px;
+		}
+	/*******内容二******/
+	.sel {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom:50px;
+	}
+		/******左边*******/
+	  	.sel_left {
+	  		width: 170px;
+	  		float: left;
+	  	}
+	  	.sel_list {
+	  		width: 100%;
+	  		background-color: #fff;
+	  	}
+	  	.sel_list li {
+	  		width: 100%;
+	  		height: 50px;
+	  		line-height: 50px;
+	  		font-size: 14px;
+	  		color: #333333;
+	  		box-sizing: border-box;
+	  		padding-left: 20px;
+	  		position: relative;
+	  	}
+	  	.active {
+			background-color: #fafafa;
+		}
+		.sel_list .active:after {
+			content:"";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 3px;
+			height:100%;
+			background-color: #29b572;
+		}
+	  	/******右边*******/
+	  	.sel_right {
+	  		display: none;
+	  		float: right;
+	  		width: 1039px;
+	  		background-color: #fff;
+	  	}
+	  	/**************修改******************/
+	  	.sel_nav {
+	  		width: 100%;
+	  		height: 64px;
+	  		background-color: #fff;
+	  		border-bottom: 1px solid #e8e8e8;
+	  		background-color: #fafafa;
+	  	}
+		.sel_nav li {
+			float: left;
+			width: 120px;
+			height: 65px;
+			line-height: 65px;
+			font-size: 16px;
+			text-align: center;
+		}
+		.chart {
+			/**********修改*****************/
+			display: none;
+			width: 979px;
+			padding:0 30px;
+			padding-top: 20px;
+			color: #333333;
+			font-size: 16px;
+		}
+		.act1 {
+			background-color: #fff;
+		}
+		.sel_tip {
+	  		width: 1039px;
+	  		height: 375px;
+	  		margin: auto;
+	  		text-align: center;
+			vertical-align: middle;
+			line-height:187.5px;
+	  	}
+/********我的学习曲线r1********/
+	.r1 .chart {
+		width: 1039px;
+		height: 650px;
+	}
+/********我所在的班级r2********/
+	.r2 .chart {
+		width: 1039px;
+		height: 650px;
+		}		
+/*********我的作业r3**********/
+	.r3 .chart {
+			padding-left: 30px;
+			color: #333333;
+			font-size: 16px;
+		}
+		.classes {
+			margin-top: 30px;
+		}
+	.r3 h2 {
+		color: #999999;
+		font-size: 14px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #ededed;
+	}
+		.chart_list {
+			margin-left:20px;
+			margin-top: 10px;
+		}
+		.chart_list li {
+			height: 45px;
+			line-height: 45px;
+			margin: 0;
+		}
+		.chart_list li:hover {
+			background-color: #eef9f4;
+		}
+		.chart_list .sp3 {
+			margin-right: 15px;
+			display: block;
+			width: 50px;
+			position: relative;
+		}
+		.chart_list .sp3:before {
+			position: absolute;
+			top: 11px;
+			left: -25px;
+			content: "";
+			width: 20px;
+			height: 20px;
+			background: url("../../img/index/15ico_bg.png") no-repeat;
+			background-position: center -243px;
+		}
+/*******账号设置r4*******/
+	.r4 .setting {
+		width: 600px;
+		margin: 0 auto;
+		padding: 127px 0;
+	}
+	.setting p {
+		width: 380px;
+		font-size: 14px;
+		margin: 0 auto;
+		text-align: left;
+		color: #666666;
+	}
+	.setting_detail li {
+		height: 40px;
+		line-height: 40px;
+		margin: 12px auto;
+	}
+	.setting_detail li span {
+		display:inline-block;
+		font-size: 14px;
+		width: 100px;
+		text-align: right;
+		color: #333333;
+	}
+	.setting_detail li .p2,.setting_detail li .p3 {
+		width: 150px;
+		font-size: 12px;
+		color: #adadad;	
+	}
+	.setting_detail li .p3 {
+		position: relative;
+		width: 125px;
+		text-align: left;
+		margin-left: 25px;	
+	}
+	.setting_detail li .p3:before {
+		position: absolute;
+		margin: 5px 0;
+		top: 0;
+		left: -25px;
+		content: "";
+		width: 20px;
+		height: 30px;
+		margin-right: 10px;
+		background: url("../../img/index/15ico_bg.png") no-repeat;
+		background-position: center -137px;
+	}
+	.setting_detail li input {
+		margin-left:10px;
+		width: 300px;
+		height: 38px;
+		text-indent: 10px;
+		font-size: 16px;
+		border: 1px solid #e0e0e0;
+	}		
+/********优惠码r5********/
+	.r5 h2 {
+		padding: 20px 0;
+		padding-left: 50px;
+		box-sizing: border-box;
+		font-size: 14px;
+		color: #c6c6c6;
+		border-bottom: 1px solid #f2f2f2;
+	}
+	.coupon {
+		width: 888px;
+		height: 200px;
+		margin: 65px auto;
+	}
+	.r5 h3 {
+		font-size: 18px;
+	}
+	.ticket {
+		float: left;
+		position: relative;
+		width: 434px;
+		height: 196px;
+		text-align: center;
+		color:#29b572; 
+		border: 1px solid #29b572;
+	}
+		.term {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			background-color: #29b572;
+		}
+	.t2 {
+		margin-left: 16px;
+		color: #c7c7c7;
+		border-color: #c7c7c7;
+	}
+	.t2 .term {
+		background-color: #c7c7c7;
+	}
+/******我是在校生r6*******/
+	.students {
+		width: 100%;
+	}
+	.students h2 {
+		margin: 60px auto;
+		margin-left: 320px;
+		font-size: 22px;
+		color: #333333;
+	}
+	.students_detail {
+		width: 400px;
+		margin: 0 auto;
+	}
+	.students_detail li {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		margin: 12px auto;
+	}
+	.students_detail li span {
+		display:inline-block;
+		font-size: 14px;
+		width: 60px;
+		text-align: right;
+		color: #333333;
+	}
+	.students_detail li input {
+		margin-left:10px;
+		width: 308px;
+		height: 38px;
+		text-indent: 10px;
+		font-size: 16px;
+		border: 1px solid #e0e0e0;
+	}
+	#submit {
+		width: 135px;
+		height: 40px;
+		margin: 35px auto;
+		margin-bottom: 90px;
+	}
+	#submit input {
+		width: 133px;
+		height: 38px;
+		font-size: 14px;
+		color: #fff;
+		border:1px solid #e0e0e0;
+		background-color: #29b572;
+	}	

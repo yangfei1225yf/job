@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/personal_center/center.css">
+</head>
+<body>
+<!-- 首部 -->
+	<div id="nav">
+			<div class="nav_div">
+				<a href="../index.php" class="logo"><img src="../img/index/logo.png"/></a>
+				<img src="../img/index/113200.png" class="faxian"/>
+				
+				<a href="javascript:void(0);" id="address">
+					<span class="change">北京</span>
+					<div class="city clearfix">
+						<div><img src="../img/index/city1.png"/><span>北京</span><p class="meng"></p></div>
+						<div><img src="../img/index/city2.png"/><span>大连</span><p class="meng"></p></div>
+						<div><img src="../img/index/city3.png"/><span>郑州</span><p class="meng"></p></div>
+						<div><img src="../img/index/city4.png"/><span>上海</span><p class="meng"></p></div>
+						<div><img src="../img/index/city5.png"/><span>广州</span><p class="meng"></p></div>
+						<div><img src="../img/index/city6.png"/><span>西安</span><p class="meng"></p></div>
+						<div><img src="../img/index/city7.png"/><span>武汉</span><p class="meng"></p></div>
+					</div>
+				</a>
+				<ul class="clearfix">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../offline_course/offline.html">线下课程</a></li>
+					<li><a href="../online_course/class_list.html">在线课程</a></li>
+					<li><a href="../school/school.html">学校</a></li>
+					<li><a href="javascript:void(0);">互联网头条</a></li>
+					<li><a href="javascript:void(0);">+提问</a></li>
+				</ul>
+				<ol>
+					<li><a href="../login/login.html">注册</a></li>
+					<li>
+						<a href="../login/login.html">登录</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+<!-- 中部内容 -->
+	<div class="section">
+		<div class="sec clearfix">
+			<div class="sec_left">
+				<img src="../img/index/headportrait.png">
+				<p>速度决定一切</p>
+				<a href="javascript:void(0);"><span>修改</span></a>			
+			</div>
+			<div class="sec_right">
+				<p class="sec_p">学习情况:</p>
+				<ul class="sec_list">
+					<li>
+						<p class="clearfix">
+							<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+							<span class="sp2">4分钟/10分钟</span>
+							<span class="spg"></span>
+							<span class="sp3">当前分数：98分</span>
+						</p>
+					</li>
+					<li>
+						<p class="clearfix">
+							<a href=""><span class="sp1">AutoCAD工程制图基础入门与提高</span></a>
+							<span class="sp2">2分钟/10分钟</span>
+							<span class="spg"></span>
+							<span class="sp3">当前分数：98分</span>
+						</p>
+					</li>
+					<li>
+						<p class="clearfix">
+							<a href=""><span class="sp1">AutoCAD工程制图基础入门与提高</span></a>
+							<span class="sp2">10分钟/10分钟</span>
+							<span class="spg"></span>
+							<span class="sp3">当前分数：98分</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sel clearfix">
+			<div class="sel_left">
+				<ul class="sel_list">
+					<li class="active">我的学习曲线</li>
+					<li>我所在的班级</li>
+					<li>我的作业</li>
+					<li>账号设置</li>
+					<li>优惠码</li>
+					<li>我是在校生</li>
+				</ul>
+			</div>
+<!-- 我的学习曲线 -->
+			<div class="sel_right r1" style="display:block;">
+				<ul class="sel_nav clearfix">
+					<li>iOS课程</li>
+					<li>Android课程</li>
+				</ul>
+				<div class="sel_tip">
+					<p>未来这里是收藏你的作业的地方<br>将包含你的作业内容，作业完成时间，作业评价等状态，<a href="javascript:void(0);" class="link_ios">挑选一门课程</a>，开始学习吧！</p>
+				</div>
+				<div class="chart" id="chart1">
+				</div>
+			</div>
+<!-- 我所在的班级 -->
+			<div class="sel_right r2">
+				<ul class="sel_nav clearfix">
+					<li>iOS课程</li>
+					<li>Android课程</li>
+				</ul>
+				<div class="sel_tip">
+					<p>未来这里是收藏你的作业的地方<br>将包含你的作业内容，作业完成时间，作业评价等状态，<a href="javascript:void(0);" class="link_ios">挑选一门课程</a>，开始学习吧！</p>
+				</div>
+				<div class="chart" id="chart2">
+					
+				</div>
+			</div>
+<!-- 我的作业 -->
+			<div class="sel_right r3">
+				<ul class="sel_nav clearfix">
+					<li>iOS课程</li>
+					<li>Android课程</li>
+				</ul>
+				<div class="sel_tip">
+					<p>未来这里是收藏你的作业的地方<br>将包含你的作业内容，作业完成时间，作业评价等状态，<a href="javascript:void(0);" class="link_ios">挑选一门课程</a>，开始学习吧！</p>
+				</div>
+				<div class="chart ch1">
+					<div class="classes">
+						<h2>第一课 ~ 第十课</h2>
+						<ul class="sec_list chart_list">
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="classes">
+						<h2>第一课 ~ 第十课</h2>
+						<ul class="sec_list chart_list">
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</span></a>
+									<span class="sp2">完成</span>
+									<span class="sp3">7230</span>
+								</p>
+							</li>
+							<li>
+								<p class="clearfix">
+									<a href=""><span class="sp1">Android 项目开发实战：语音播报计算器</span></a>
+									<span class="sp2">未完成</span>
+									<span class="sp3">256</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="chart ch2">2</div>
+			</div>
+<!-- 账号设置 -->
+			<div class="sel_right r4">
+				<div class="setting">
+					<p>请重设您的账号密码</p>
+					<ul class="setting_detail">
+						<li>
+							<span class="p1">当前密码:</span>
+							<input type="text">
+						</li>
+						<li>
+							<span class="p1">新密码:</span>
+							<input type="text">
+							<span class="p2">密码长度在6-32个字符之间</span>
+						</li>
+						<li>
+							<span class="p1">再次确认密码:</span>
+							<input type="text">
+						</li>
+					</ul>
+					<div id="submit">
+						<input type="submit" value="提交">
+					</div>
+				</div>
+				<div class="setting">
+					<p>请重设您的账号密码</p>
+					<ul class="setting_detail">
+						<li>
+							<span class="p1">当前密码:</span>
+							<input type="text">
+							<span class="p3">请输入当前密码</span>
+						</li>
+						<li>
+							<span class="p1">新密码:</span>
+							<input type="text">
+							<span class="p3">不能与原密码相同</span>
+						</li>
+						<li>
+							<span class="p1">再次确认密码:</span>
+							<input type="text">
+							<span class="p3">密码输入不一致</span>
+						</li>
+					</ul>
+					<div id="submit">
+						<input type="submit" value="提交">
+					</div>
+				</div>
+			</div>
+<!-- 优惠码 -->
+			<div class="sel_right r5">
+				<h2>恭喜你以优异的成绩完成了学科学习，以下是你的奖学金，助你在大神的道路上一臂之力，以资鼓励！</h2>
+				<div class="coupon clearfix">
+					<div class="ticket t1">
+						<h3><span style="font-size: 64px;">3000.00</span>元</h3>
+						<p>来源：iOS科目</p>
+						<p>可用范围：可抵扣蓝鸥iOS就业班学费及报名费</p>
+						<p class="term">有效期：2015年10月30日-2015年11月30日</p>
+					</div>
+					<div class="ticket t2">
+						<h3><span style="font-size: 64px;">1000.00</span>元</h3>
+						<p>来源：iOS科目</p>
+						<p>可用范围：可抵扣蓝鸥iOS就业班学费及报名费</p>
+						<p class="term">已效期</p>
+					</div>
+				</div>
+			</div>
+<!-- 我是在校生 -->
+			<div class="sel_right r6">
+				<div class="students">
+					<h2>在校生信息</h2>
+					<ul class="students_detail">
+						<li>
+							<span>姓名:</span>
+							<input type="text">
+						</li>
+						<li>
+							<span>所在学校:</span>
+							<input type="text">
+						</li>
+						<li>
+							<span>所在系别:</span>
+							<input type="text">
+						</li>
+						<li>
+							<span>所在专业:</span>
+							<input type="text">
+						</li>
+						<li>
+							<span>所在班级:</span>
+							<input type="text">
+						</li>
+					</ul>
+					<div id="submit">
+						<input type="submit" value="提交并保存">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 尾部 -->
+	<div id="footer">
+		<div class="footer">
+			<div class="friend_line_bar clearfix">
+				<h2>友情链接</h2>
+				<ul class="clearfix">
+					<li><a href="javascript:void(0);">蓝鸥科技</a></li>
+					<li><a href="javascript:void(0);">蓝鸥科技</a></li>
+					<li><a href="javascript:void(0);">蓝鸥科技</a></li>
+					<li><a href="javascript:void(0);">蓝鸥科技</a></li>
+					<li><a href="javascript:void(0);">蓝鸥科技</a></li>
+					<li><a href="javascript:void(0);">蓝鸥科技</a></li>
+				
+				</ul>
+				<a class="more_btn" href="../index/friend_line.html">更多</a>
+			</div>
+			<div class="footer_info clearfix">
+				<div class="f_info_list">
+					<h3>我们的实验室</h3>
+					<ul>
+						<li><a href="javascript:void(0);">在线编程</a></li>
+						<li><a href="javascript:void(0);">奖学制度</a></li>
+						<li><a href="javascript:void(0);">在线班级</a></li>
+						<li><a href="javascript:void(0);">课后60分钟考试</a></li>						
+					</ul>
+				</div>
+				<div class="f_info_list">
+					<h3>关于我们</h3>
+					<ul>
+						<li><a href="javascript:void(0);">精英吧简介</a></li>
+						<li><a href="javascript:void(0);">联系我们</a></li>
+						<li><a href="javascript:void(0);">加入我们</a></li>					
+					</ul>
+				</div>
+				<div class="f_info_list">
+					<h3>现有课程</h3>
+					<ul>
+						<li><a href="javascript:void(0);">iOS</a></li>
+						<li><a href="javascript:void(0);">Android</a></li>
+						<li><a href="javascript:void(0);">unity3D</a></li>
+						<li><a href="javascript:void(0);">H5</a></li>						
+					</ul>
+				</div>
+				<div class="f_info_list">
+					<h3>帮助</h3>
+					<ul>
+						<li><a href="javascript:void(0);">联系客服</a></li>
+						<li><a href="javascript:void(0);">版权声明</a></li>
+						<li><a href="javascript:void(0);">法律声明</a></li>
+						<li><a href="javascript:void(0);">服务条款</a></li>						
+					</ul>
+				</div>
+				<div class="f_info_list list5">
+					<h3>反馈方式</h3>
+					<ul>
+						<li><a href="javascript:void(0);">电子邮箱：help@xxxxxx.com</a></li>
+						<li><a href="javascript:void(0);">精英吧微信公众号</a></li>
+						<li>	<img src="../img/index/weixin_code.png" alt="" /></li>				
+					</ul>
+				</div>
+				<div class="f_info_list list6">
+					<h3>精英吧APP扫描下载</h3>
+					<img src="../img/index/app_code.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="company_name">蓝鸥科技有限公司©1997-2016 | 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</div>
+	</div>
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/lib/echarts.min.js"></script>
+	<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/personal_center.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

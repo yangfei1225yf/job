@@ -1,0 +1,332 @@
+.nav_Nav_login{
+width: 100%;
+height: 90px;
+font-size: 14px;		
+color: #666666;
+
+}
+.login_nav{
+width: 975px;
+height: 90px;
+margin: auto;
+}
+
+.login_nav #logo {
+display: inline-block;
+float: left;
+width: 110px;
+height: 45px;
+margin-top: 22.5px;
+}
+.login_nav a img {
+display: block;
+width: 100%;
+height: 100%;
+}
+.login_nav span{
+display: block;
+float: left;
+width: 100px;
+height: 45px;
+line-height: 45px;
+margin-top: 22.5px;
+margin-left: 10px;
+padding-left: 10px;
+border-left: 1px solid #e8e8e8;
+}
+.login_nav a{
+line-height: 90px;
+float: right;
+color: #666666;
+margin-left: 40px;
+}
+.login_nav a:hover{
+color: #29b572;
+}
+.login_bg{
+width: 100%;
+height: 600px;
+background:url(../../img/login.png) no-repeat center;
+}
+.login_main{
+width: 975px;
+height: 600px;
+/*background-color: red;*/
+margin: auto;
+}
+.login_footer{
+font-size: 13px;
+color: #808080;
+margin-top: 20px;
+text-align: center;
+}
+.login_wrap{
+width: 320px;
+height: 455px;
+background-color: white;
+float: right;
+margin-top: 72.5px;
+}
+
+.login_plist p{
+float: left;
+width: 160px;
+height: 49px;
+text-align: center;
+line-height: 49px;
+border-bottom: 2px solid #cccccc;
+font-size: 16px;
+color: #666666;
+}
+.login_wrap ul li{
+display: block;
+width: 100%;
+height: 405px;
+background-color: white;
+display: none;
+}
+.login_plist .login_plist_active{
+border-color: #29b572;
+color:#29b572 ;
+}
+.login_wrap .login_active{
+display: block;
+}
+#password_again,#phone,#phone1,#password,#pwd{
+display: block;
+width: 260px;
+height: 40px;
+border: 1px solid #cccccc;
+/*margin-top: 40px;*/
+margin-left: 30px;
+font-size: 14px;
+text-indent: 46px;
+background-color: white;
+}
+#phone,#phone1{
+margin-top: 40px;
+}
+#phone:focus{
+border-color: #eb0000;
+background-color: white;
+}
+#phone1:focus{
+border-color: #eb0000;
+background-color: white;
+}
+
+
+#password:focus{
+border-color: #eb0000;
+background-color: white;
+}
+#pwd:focus{
+border-color: #eb0000;
+background-color: white;
+}
+
+#password_again:focus{
+border-color: #eb0000;
+background-color: white;
+}
+.label_phone:after{
+content:"";
+width: 20px;
+height: 20px;
+float:left;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 0px 2px;
+border-right: 1px solid #cccccc;
+padding-left: 5px;
+margin: -31px 0px 0px 40px;
+}
+.yishiyong:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+.yan_bixu:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+.mi_bixu:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+.phone1_pwd:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+.phone1_bixu:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+.phone_num_yan:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+.pwd_again:before{
+content: "";
+width: 20px;
+height: 20px;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 2px -143px;
+float: left;
+margin-top: 5px;
+}
+
+
+
+.phone_num{
+margin-left: 30px;
+height: 35px;
+line-height: 35px;
+font-size: 12px;
+color: #eb0000;
+}
+
+
+
+
+#check_num{
+display: block;
+width: 160px;
+height: 40px;
+border: 1px solid #cccccc;
+margin-left: 30px;
+font-size: 14px;
+text-indent: 46px;
+float: left;
+}
+#check_num:focus{
+border-color: #eb0000;
+background-color: white;
+}
+.label_check:after{
+content:"";
+width: 20px;
+height: 20px;
+float:left;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: -2px -47px;
+border-right: 1px solid #cccccc;
+padding-left: 3px;
+margin: 10px 0px 0px -150px;
+}
+#get_num,.get_num_code{
+width: 90px;
+height: 30px;
+border-radius: 4px;
+margin-top: 6px;
+margin-left: 8px;
+margin-bottom: 7px;
+border:1px solid #29b572;
+font-size: 14px;
+color: #29b572;
+background-color: white;
+outline: none;
+}
+.label_password:after{
+content:"";
+width: 20px;
+height: 20px;
+float:left;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 0px -24px;
+border-right: 1px solid #cccccc;
+padding-left: 5px;
+margin: -31px 0px 0px 40px;
+}
+.label_password_again:after{
+content:"";
+width: 20px;
+height: 20px;
+float:left;
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 0px -118px;
+border-right: 1px solid #cccccc;
+padding-left: 5px;
+margin: -31px 0px 0px 40px;
+}
+.tongyi_check{
+background: url(../../img/index/15ico_bg.png) no-repeat center;
+background-position: 0px -97px;
+}
+
+input[type=checkbox] {
+display:inline-block;
+height: 13px;
+width: 13px;
+border: 1px solid #cccccc;
+border-radius: 3px;
+-webkit-appearance: none;
+outline: 0;
+
+margin-right: 5px;
+vertical-align: text-top;
+
+}		
+input[type=checkbox]:checked:after {
+content: '';
+display: inline-block;
+height: 13px;
+width: 13px;
+background: url(../../img/index/15ico_bg.png);
+background-position: -2px -97px;
+
+}	
+#tongyi{
+	margin-left: 30px;
+}
+.denglu,.zhuche_tj{
+	background-color:#29b572;
+	border:none;
+	width: 260px;
+	height: 40px;
+	margin:10px 30px;
+	color: white;
+	font-size: 16px;
+	outline: none;
+}
+.chongzhi{
+	float: right;
+	margin-right: 30px;
+	color: #333333;
+	
+}
+
+
+
+
+.pwd_kong,.pwd_kong,.pwd_right,.phone1_kong,.phone_can,.phone_already,.pwd_error,.kong,.right_login,.error_login,.yan_kong,.yan_right,.mi_kong,.mi_right,.mima_error,.again_right,.again_kong{
+	color: #29b572;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹窗</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <style type="text/css">
+
+    /**********弹窗***********/
+    .clearfix{zoom:1;}
+    .clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+            #mask {
+                display: none;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color:rgba(0,0,0,.4);
+            }
+            #box {
+                display: none;
+                position: absolute;
+                z-index: 1;
+                margin:auto;
+                width: 500px;
+                height: 310px;
+                background-color: #fff;
+            }
+            .tip {
+                width: 100%;
+                height: 30px;
+                background-color: #29b572;
+            }
+            .tip p {
+                float: left;
+                height: 30px;
+                line-height: 30px;
+                text-indent: 10px;
+                font-size: 14px;
+                color: #fff;
+                text-align: left;
+                position: relative;
+            }
+            .tip a {
+                float: right;
+                display: block;
+                width: 20px;
+                height: 30px;
+                margin-right: 10px;
+               /* background-color: red;*/
+                background: url("../img/index/15ico_bg.png") no-repeat;
+                background-position: center -260px;
+
+            }
+            .message {
+                width: 100%;
+                margin: 30px 0;
+                margin-left: 40px;
+                box-sizing: border-box;
+            }
+            .message  li{
+                height: 30px;
+                margin: 10px 0; 
+            }
+            .message  li:first-child {
+                color: #999999;
+                line-height: 30px;
+            }
+            .message li span {
+                font-size:14px;
+                color: #666666;
+            }
+            .message li input,.message li select {
+                width: 268px;
+                height: 28px;
+                font-size: 14px;
+                text-indent: 14px;
+                border: 1px solid #e0e0e0;
+                border-radius:0;
+            }
+
+            #confirm,#cancle {
+                display:inline-block;
+                width:100px;
+                height: 35px;
+                line-height:35px;
+                margin:10px 5px;
+                font-size: 14px;                
+                text-align: center;
+                border-radius: 4px;
+            }
+            #confirm {
+                margin-left:53%;
+                color: #fff;
+                background-color: #29b572; 
+            }
+            #cancle {
+                margin-right: 20px;
+                color: #000;
+                background-color: #f5f5f5; 
+            }
+
+    </style>
+</head>
+<body>
+    <button id="click">点击</button>
+<div id="mask">
+    <!-- 弹窗 -->
+    <div id="box">
+        <div class="tip clearfix">
+            <p>提示</p>
+            <a href="javascript:void(0);"></a>
+        </div>
+        <ul class="message">
+            <li>留下您的联系电话，我们会在第一时间和您取得联系</li>
+            <li>
+                <span>您的姓名：</span>
+                <input type="text">
+            </li>
+            <li>
+                <span>您的电话：</span>
+                <input type="text">
+            </li>
+            <li>
+                <span>意向课程：</span>
+                <select>
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                </select>
+            </li>
+        </ul>
+        <div>
+            <a href="javascript:void(0);" id="confirm">确定</a>
+            <a href="javascript:void(0);" id="cancle">取消</a>
+        </div>
+        
+    </div>
+<!-- 蒙层 -->
+</div>
+    <script type="text/javascript">
+    var click = document.getElementById("click");
+    var confirm = document.getElementById("confirm");
+    var shut = document.querySelector(".tip a");
+    var cancle = document.getElementById("cancle");
+    var box = document.getElementById("box")
+    click.onclick = function(){
+            document.getElementById("mask").style.display = "block";
+            document.getElementById("box").style.display = "block";
+            box.style.top = (document.documentElement.clientHeight - box.clientHeight)/2 + "px";
+        box.style.left = (document.documentElement.clientWidth - box.clientWidth)/2 + "px";
+        }
+    function close(){
+        document.getElementById("mask").style.display = "none";
+        document.getElementById("box").style.display = "none";
+    }
+    confirm.onclick = function(){
+        
+    }
+    cancle.onclick = function(){
+        close();
+    }
+    shut.onclick = function(){
+        close();
+    }
+    window.onresize = function(){
+        box.style.top = (document.documentElement.clientHeight - box.clientHeight)/2 + "px";
+        box.style.left = (document.documentElement.clientWidth - box.clientWidth)/2 + "px";
+    }
+    </script>
+</body>
+</html>

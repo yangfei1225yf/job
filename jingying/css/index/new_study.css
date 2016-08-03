@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 body {
   background-color: #f5f5f5;
@@ -42,29 +41,34 @@ body {
   border-left: 2px solid #33b574;
   background-color: #f5f5f5;
 }
-.right_content h1 {
+.right_content>div {
+  display: none;
+}
+.right_content .new_class {
+  /*display: block;*/
+}
+.new_class1 h1 {
   font-size: 26px;
 }
-.right_content .article_info {
+.new_class1 .article_info {
   line-height: 30px;
   font-size: 13px;
   color: #999;
 }
-.right_content .article_info span:last-child {
+.new_class1 .article_info span:last-child {
   margin-left: 20px;
 }
-.right_content img {
+.new_class1 img {
   display: block;
   width: 500px;
   height: auto;
   margin: auto;
 }
-.right_content .article {
+.new_class1 .article {
   border-top: 1px solid #e8e8e8;
   padding: 38px 0;
 }
-.right_content .article p {
+.new_class1 .article p {
   margin-bottom: 38px;
   text-indent: 3.2rem;
 }
-/*# sourceMappingURL=new_study.css.map */
