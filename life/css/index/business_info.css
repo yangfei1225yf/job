@@ -1,0 +1,83 @@
+@charset:"utf8";
+body {
+	background-color: #f2f2f2;
+}
+/*中部*/
+.class_info_content {
+	width: 100%;
+	
+	box-sizing: border-box;
+}
+.class_info_content>ul {
+	float: left;
+}
+/*竖排tab*/
+.business_tab {
+	width: 28%;
+	box-sizing: border-box;
+}
+.business_tab li {
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #696969;
+	border-left: 5px solid transparent;
+	box-sizing: border-box;
+}
+.business_tab li.active {
+	color: #f29004;
+	border-left: 5px solid #f29004;
+	background-color: #e6e6e6;
+}
+/*商家列表*/
+.business_list {
+	width: 72%;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.business_list>li {
+	display: none;
+	padding: 0 4%;
+	
+}
+.business_list>li>ul li {
+	padding: 4% 0;
+	border-top: 1px solid #ccc;
+}
+.business_list>li>ul li:first-child {
+	border: none;
+}
+.pro_content {
+	width: 100%;
+	box-sizing: border-box;
+}
+.content1_pic {
+	float: left;
+	width: 30%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.content1_info {
+	float: left;
+	width: 65%;
+	margin-left: 3%;
+}
+.content1_info p {
+	font-size: 1.2rem;
+	color: #a6a4a4;
+}
+.content1_info p:nth-child(1) {
+	font-size: 1.5rem;
+	color: #666;
+}
+
+.content1_info p:nth-child(2)>span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	background: url('../../img/icon-all.png') no-repeat;
+	background-position: -38px -106px;
+	background-size: 1200%;
+}

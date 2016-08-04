@@ -1,0 +1,173 @@
+@charset:"utf8";
+html,body {
+	/*height: 100%;*/
+}
+header {
+	height: 40px;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: #f29004;
+	color: #fff;	
+	box-sizing: border-box;
+}
+/*返回*/
+.back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background: url('../img/back-arr.png') no-repeat 35%;
+	background-size: 30%;
+}
+/*右侧按钮*/
+.right_btn {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 40px;
+	font-size: 1.6rem;
+	color: #fff;
+}
+/*页面标题*/
+.title {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 40px;
+	font-size: 1.8rem;
+}
+/*登录，注册页面内容*/
+.login_content {
+	width: 85.33%;
+	margin: 0 auto;
+	margin-top: 40px;
+	box-sizing: border-box;
+}
+/*登录、注册、确认按钮*/
+.login_btn_set {
+	display: block;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	font-size: 1.7rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #f29004;
+}
+/*底栏*/
+footer {
+	height: 50px;	
+}
+#footer ul {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	padding-top: 8px;	
+	background-color: #fff;
+	box-sizing: border-box;
+}
+#footer li {
+	float: left;
+	width: 20%;
+}
+#footer a {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	color: #9f9f9f;
+	font-size: 1.1rem;
+}
+/*底栏图标的设置*/
+#footer a:before {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 23px;
+	margin: 0 auto;
+	background:url("../img/icon-all.png") no-repeat;
+	background-size: 216px 226px;
+}
+#footer .icon.active a {
+	color: #f5ad45;
+}
+/*点击前的颜色*/
+#footer .icon1 a:before {
+	background-position: -71px -103px;
+}
+#footer .icon2 a:before {
+	background-position: -47px -103px;
+}
+#footer .icon3 a:before {
+	background-position: -23px -103px;
+}
+#footer .icon4 a:before {
+	background-position: -96px -103px;
+}
+#footer .icon5 a:before {
+	background-position: 1px -103px;
+}
+/*点击后的颜色*/
+#footer .icon1.active a:before {
+	background-position: -71px -79px;
+}
+#footer .icon2.active a:before {
+	background-position: -47px -79px;
+}
+#footer .icon3.active a:before {
+	background-position: -23px -79px;
+}
+#footer .icon4.active a:before {
+	background-position: -96px -79px;
+}
+#footer .icon5.active a:before {
+	background-position: 1px -79px;
+}
+
+/*大图滚动*/
+.swiper-container {
+	width: 100%;        
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.swiper-slide img {
+	width: 100%;
+	height: 100%;	
+}
+span.swiper-pagination-bullet {
+	opacity: 0.6;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #f29004;
+}
+
+

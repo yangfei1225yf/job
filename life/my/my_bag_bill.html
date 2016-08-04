@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的钱包</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/my/my_bag.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<a class="back" href="mine.html"></a>
+			<div class="title">我的钱包</div>
+			<a class="right_btn" href="bill.html">账单</a>
+		</div>
+	</header>
+	<section class="my_bag_content">
+		<div class="my_bag_surplus">
+			<p>我的余额</p>
+			<p>￥88.88</p>
+		</div>
+		<div class="pay_way">
+			<p class="way1">支付宝<span class="active"></span></p>
+			<p class="way2">微信支付<span></span></p>
+		</div>
+		<a id="my_bag_btn" class="btn_set" href="my_bag_recharge.html">充值</a>
+	</section>
+	<script src="../js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var index = 0;
+			$(".pay_way span").click(function() {
+				index = $(this).index(".pay_way span");
+				$(".pay_way span").eq(index).addClass("active").parent().siblings().children().removeClass("active");
+			})
+		})
+		
+		
+	</script>
+</body>
+</html>

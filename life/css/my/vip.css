@@ -1,0 +1,145 @@
+@charset:"utf8";
+body {
+	background-color: #f2f2f2;
+}
+/*升级会员页面*/
+.pay {
+	/*position: absolute;
+	right: 3%;
+	top: 0;
+	height: 40px;
+	font-size: 1.6rem;
+	color: #fff;*/
+}
+.vip_up_content	{
+	width: 100%;
+	padding: 3%;
+	font-size: 1.6rem;
+	color: #666;
+	box-sizing: border-box;
+}
+.vip_up_content ol {
+	text-align: center;
+}
+/*两端对齐线*/
+.vip_line {
+	width: 100%;
+	margin: 5% 0;
+	font-size: 1.6rem;
+	color: #808080;
+}
+.vip_line span {
+	display: inline-block;
+	width: 33.333333333333336%;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 1px solid #e2e2e2;
+	box-sizing: border-box;
+}
+.vip_line span:nth-child(2) {
+	border: none;
+}
+/*充值会员页面*/
+.vip_content {
+	padding: 0 3%;
+	background-color: #fff;
+}
+.pay_info {
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+	margin: 0 auto;
+	font-size: 1.4rem;
+	color: #666;
+}
+.pay_info span:nth-child(2) {
+	float: right;
+}
+#vip {
+	width: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+#vip li {
+	width: 100%;
+	padding: 3% 0;
+	border-top: 1px solid #dbdbdb;
+}
+#vip li a {
+	display: block;
+}
+/*VIP图片*/
+.vip_pic {
+	float: left;
+	width: 20.6%;
+	border: 1px solid #f7f7f7;
+	box-sizing: border-box;
+}
+.vip_pic img {
+	display: block;
+	width: 100%;
+}
+/*VIP信息*/
+.vip_info {
+	float: left;
+	width: 75%;
+	margin-left: 3%;
+	font-size: 1.2rem;
+}
+.vip_info p {
+	margin: 1% 0;
+}
+.vip_name {
+	color: #666;
+	font-size: 1.4rem;
+}
+.vip_time {
+	color: #757575;
+}
+.vip_price {
+	color: #e12424;	
+}
+/*支付按钮*/
+#pay_now_btn {
+	display: block;
+	width: 85%;
+	height: 45px;
+	line-height: 45px;
+	margin: 7% auto;
+	color: #fff;
+	font-size: 1.8rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #f29004;
+}
+
+/*支付成功页面*/
+.vip_success_content {
+	width: 100%;
+	font-size: 2rem;
+	color: #333;
+	background: url('../../img/vip-3.png') no-repeat center center;
+	background-size: 25%;
+	overflow: hidden;
+}
+.vip_success_content p {
+	margin-top: 45%;
+	text-align: center;
+}
+
+/*继续购物按钮*/
+#go_shopping_btn {
+	display: block;
+	width: 34%;
+	height: 36px;
+	line-height: 36px;
+	margin: 20% auto 0;
+	color: #fff;
+	font-size: 1.6rem;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #ee4147;
+}
+
+
+
