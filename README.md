@@ -13,7 +13,7 @@
 ## life—family
    [生活一家](https://yangfei1225yf.github.io/job/life)
 ## vivo 
-    [找徐峥](https://yangfei1225yf.github.io/job/vivo)
+   [找徐峥](https://yangfei1225yf.github.io/job/vivo)
 
 ## imagination	
    [创想家盛典](https://yangfei1225yf.github.io/job/imagination)
