@@ -1,3 +1,14 @@
+<?php 
+	$sql = "select * from renderings-swiper";
+	$resule = mysql_query($sql);
+	if(mysql_affected_rows() > 0) {
+		while ($row = mysql_fetch_assoc($rusult)) {
+			echo $row["title"];
+			echo $row["link"];
+			echo $row["src"];
+		}
+	}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +19,7 @@
 	<link rel="stylesheet" href="css/public.css">
 	<link rel="stylesheet" href="css/renderings.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-	<style>
-		
-	</style>
+
 </head>
 <body>
 		<!-- 导航栏 -->
@@ -83,10 +92,6 @@
 		<p>Copyright &copy; 1998-2015&nbsp; shining&nbsp; Group</p>
 	</footer>
 	<!-- /底部 -->
-	<!-- 蒙层 -->
-	<div id="mask">
-		<img src="" alt="">
-	</div>
 	<!-- js -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/public.js"></script>	
@@ -103,87 +108,59 @@
 		        autoplay: 4000,
 		        autoplayDisableOnInteraction: true
 			});
-			var list = $("#renderings-wrap li");
-			function createDiv() {
-				for(var i = 0; i < 12; i++) {
-					//找高度最小的li
-					var minList = list[0];
-					for(var j = 0; j < list.length; j++) {
-						if(minList.offsetHeight > list[j].offsetHeight) {
-							minList = list[j];
-						}
-					}
-					var box = $(`<div class="box">
-									<div class="inner-mask">
-										<span class="magnifier">图片加载</span>
-									</div>
-									<img src="img/Drawing-`+(i+1)+`.png">
-								</div>`);
-					box.appendTo(minList);
-				}
-			}
-			createDiv();
-			// 蒙层 大图
-			$("#renderings-wrap").on("click","div>div",function() {
-				$("#mask").show();
-				var winW = $(window).width();
-				console.log(winW)
-				var winH = $(window).height();
-				var pic = $(this).siblings();
-				var bigPic = $("#mask img");
-				// console.log(pic)
-				var w = pic.width()/winW;
-				var h = pic.height()/winH;
-				console.log(w,h)
-				
-				if(w>h) {
-					bigW = bigPic.width(winW*0.8);
-					bigH = bigPic.height('auto');
-				}else {
-					bigH = bigPic.height(winH*0.8);
-					bigW = bigPic.width('auto');
-				}
-				$("#mask img").attr({
-					src:$(this).siblings().attr("src")
-				}).css({
-					width:bigW,
-					height:bigH				
-				});					
-			});
-			$("#mask").click(function() {
-				$(this).hide();
-			})
-			// 下拉添加
-			var footer = $("#footer");
-			$(window).on("scroll",function() {
-				console.log(footer.get(0).getBoundingClientRect().bottom)
-				console.log(document.documentElement.clientHeight)
-				if(footer.get(0).getBoundingClientRect().bottom - 1 <= document.documentElement.clientHeight) {
-					createDiv();
-				}
-			})
-
-			$("#slider-box").click(function() {
-				$("html,body").animate({
-					scrollTop:0
-				},300)
-			})
 		});
 
-		// 回到顶部
-		// var goTop = document.getElementById("slider-box");
-		// goTop.onclick = function() {
-		// var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		// var raf = window.requestAnimationFrame(up);
-		// function up() {
-		// 	scrollTop -= 100;
-		// 	document.body.scrollTop = scrollTop;
-		// 	document.documentElement.scrollTop = scrollTop;
-		// 	raf = window.requestAnimationFrame(up);
-		// 	if(scrollTop <= 0) {
-		// 		window.cancelAnimationFrame(raf)
-		// 	}
-		// }
-	// }
+		var wrap = document.getElementById("renderings-wrap");
+		var list = document.querySelectorAll("#renderings-wrap li");
+		var footer = document.getElementById("footer");
+		function createDiv() {
+			for(var i = 0; i < 12; i++) {
+				//找高度最小的li
+				var minList = list[0];
+				for(var j = 0; j < list.length; j++) {
+					if(minList.offsetHeight > list[j].offsetHeight) {
+						minList = list[j];
+					}
+				}
+				var box = document.createElement("div");
+				var innerMask = document.createElement("div");
+				var magnifier = document.createElement("span");
+				var newImg = document.createElement("img");
+				var att = document.createAttribute("src");
+				att.value = "img/Drawing-"+(i+1)+".png";
+				newImg.setAttributeNode(att);
+				box.className = "box";
+				innerMask.className = "inner-mask";
+				magnifier.className = "magnifier";
+				magnifier.innerHTML = "图片加载图片加载图片加载";												
+				box.appendChild(innerMask);
+				innerMask.appendChild(magnifier);
+				box.appendChild(newImg);
+				minList.appendChild(box);
+			}
+		}
+		createDiv();
+		window.onscroll = function() {
+			console.log(footer.getBoundingClientRect().bottom)
+			console.log(document.documentElement.clientHeight)
+			if(footer.getBoundingClientRect().bottom - 1 <= document.documentElement.clientHeight) {
+				createDiv();
+			}
+		}
+
+		var goTop = document.getElementById("slider-box");
+		goTop.onclick = function() {
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		var raf = window.requestAnimationFrame(up);
+		function up() {
+			scrollTop -= 100;
+			document.body.scrollTop = scrollTop;
+			document.documentElement.scrollTop = scrollTop;
+			raf = window.requestAnimationFrame(up);
+			if(scrollTop <= 0) {
+				window.cancelAnimationFrame(raf)
+			}
+		}
+	}
 	</script></body>
 </html>

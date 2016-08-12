@@ -7,6 +7,7 @@
 
 /*big 视频*/
 .animate-wrap {
+
 	overflow: hidden;
 	background-color: #fff;
 }
@@ -17,24 +18,10 @@
 	z-index: 0;
 }
 .animate-big video,
-.animate-two-video video{
+.animate-two-video video {
 	width: 100%;	
 }
-.play-btn,.play-btn1 {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 9%;
-	height: 15%;
-	margin-left: -5%;
-	margin-top: -5%;	
-	color: transparent;
-	background: url("../img/play.png") no-repeat center;
-	background-size: 100% 100%;
-}
-.play-btn {
-	display: none;
-}
+
 .animate-big-msg {
 	display: none;
 	position: absolute;
@@ -57,13 +44,29 @@
 	margin-bottom: 10px;
 	font-size: 1.5rem;
 }
+.play-btn,
+.play-btn1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 9%;
+	height: 15%;
+	transform: translate(-50%,-50%);	
+	color: transparent;
+	background: url("../img/play.png") no-repeat center;
+	background-size: 100% 100%;
+}
+.play-btn {
+	display: none;
+}
 /*视频列表*/
 .animate-two {
 	width: 75%;
 	margin: 0 auto;
 }
 .animate-two li {
-	padding-top: 5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	border-bottom: 1px solid #bfbfbf;
 }
 .animate-two-video {
@@ -79,9 +82,16 @@
 	color: #b4b4b4;
 	box-sizing: border-box;
 }
+.animate-two-msg:hover {
+	color: #333;
+}
 .animate-two-msg p {
 	display: inline-block;
 	font-size: 1.5rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
 }
 .animate-two-msg h2 {
 	display: inline-block;

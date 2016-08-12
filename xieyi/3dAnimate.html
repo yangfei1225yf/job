@@ -1,4 +1,4 @@
-
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +55,7 @@
 		<ul class="animate-two clearfix">
 			<li class="clearfix">
 				<div class="animate-two-video">
-					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<video class="animate-video" src="http://122.72.0.153/hc.yinyuetai.com/uploads/videos/common/F4F6014E67D1819AA5964847178D8059.flv?sc=58cf2e5daa31d6b6" poster="img/3D-1.png"></video>
 					<div class="play-btn1">play</div>
 				</div>								
 					
@@ -66,7 +66,7 @@
 			</li>
 			<li class="clearfix">
 				<div class="animate-two-video">
-					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<video class="animate-video" src="http://122.72.0.153/hc.yinyuetai.com/uploads/videos/common/F4F6014E67D1819AA5964847178D8059.flv?sc=58cf2e5daa31d6b6" poster="img/3D-1.png"></video>
 					<div class="play-btn1">play</div>
 				</div>								
 					
@@ -77,7 +77,7 @@
 			</li>
 			<li class="clearfix">
 				<div class="animate-two-video">
-					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<video class="animate-video" src="http://122.72.0.153/hc.yinyuetai.com/uploads/videos/common/F4F6014E67D1819AA5964847178D8059.flv?sc=58cf2e5daa31d6b6" poster="img/3D-1.png"></video>
 					<div class="play-btn1">play</div>
 				</div>								
 					
@@ -88,7 +88,7 @@
 			</li>
 			<li class="clearfix">
 				<div class="animate-two-video">
-					<video class="animate-video" src="" poster="img/3D-1.png"></video>
+					<video class="animate-video" src="http://122.72.0.153/hc.yinyuetai.com/uploads/videos/common/F4F6014E67D1819AA5964847178D8059.flv?sc=58cf2e5daa31d6b6" poster="img/3D-1.png"></video>
 					<div class="play-btn1">play</div>
 				</div>								
 					
@@ -123,6 +123,7 @@
 	<script src="js/public.js"></script>
 	<script>
 		$(function() {
+			var index = 0;
 			$(".animate-big").hover(function() {
 				$(".animate-big-msg").css({display:"block"});
 				$(".play-btn").css({display:"block"});
@@ -138,21 +139,25 @@
 					$("#video").get(0).pause();
 				}
 			});
-		});
-		var goTop = $("#slider-box");
-		goTop.on("click",function() {
-			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-			var raf = window.requestAnimationFrame(up);
-			function up() {
-				scrollTop -= 100;
-				document.body.scrollTop = scrollTop;
-				document.documentElement.scrollTop = scrollTop;
-				raf = window.requestAnimationFrame(up);
-				if(scrollTop <= 0) {
-					window.cancelAnimationFrame(raf)
+			// 小视频
+			$(".animate-two-video").click(function() {
+				index = $(this).parent().index();
+				$(".play-btn1").css({display:"none"});
+				console.log(index)
+				if($(".animate-two video").eq(index).get(0).paused) {
+					$(".animate-two video").eq(index).get(0).play();
+				}else {
+					$(".animate-two video").eq(index).get(0).pause();
 				}
-			}
-		})
+			})
+			// 回到顶部
+			$("#slider-box").click(function() {
+				$("html,body").animate({
+					scrollTop:0
+				},300)
+			})
+		});
+		
 	</script>
 </body>
 </html>
