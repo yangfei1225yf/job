@@ -160,7 +160,6 @@ footer {
     justify-content: center;
 }
 .swiper-slide img {
-	width: 100%;
 	height: 100%;	
 }
 span.swiper-pagination-bullet {
@@ -170,4 +169,17 @@ span.swiper-pagination-bullet {
 	background: #f29004;
 }
 
+/*pay*/
+.pay_btn {
+	display: block;
+	width: 85%;
+	height: 45px;
+	line-height: 45px;
+	margin: 6% auto;
+	color: #fff;
+	font-size: 1.8rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #f29004;
+}
 

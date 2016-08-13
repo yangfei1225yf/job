@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>升级会员</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/my/my_order.css">
+</head>
+<body>
+	
+		<!-- 头部： -->
+	<header>
+		<div class="header">
+			<a class="back" href="mine.html"></a>
+			<div class="title">我的订单</div>
+		</div>
+	</header>
+	<div class="my-order-page">	
+		<ul class="tab-click-btn-list clearfix">
+			<li><a href="javascript:void(0)" class="tab-btn slideActive">待付款</a></li>
+			<li><a href="javascript:void(0)" class="tab-btn">待发货</a></li>
+			<li><a href="javascript:void(0)" class="tab-btn">待收货</a></li>
+			<li><a href="javascript:void(0)" class="tab-btn">已完成</a></li>
+			<li><a href="javascript:void(0)" class="tab-btn">退货/售后</a></li>
+		</ul>
+		<div class="tab-container">
+			<!-- 待付款： -->
+			<ul class="tab-inner wait-pay-wrap">
+				<li>
+					<p>
+						<span class="goods-order-number">订单编号：SHYJ12552</span>
+						<span>待发货</span>
+					</p>
+					<a href="javascript:void(0);" class="goods-info-card">
+						<ul class="goods-info-list clearfix">
+							<li class="left">
+								<img src="../img/life_food1.png">
+							</li>
+							<li class="right">
+								<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+								<!-- <p class="goods-size-type">规格：<span>1盒6片</span></p> -->
+								<p class="wait-goods-price">&yen;29.5</p>
+								<span class="wait-goods-number">&times;&nbsp;2</span>
+							</li>
+						</ul>
+					</a>
+					<p class="wait-operation-wrap clearfix">
+						<span>共2件</span>
+						<span>合计：&yen;13</span>
+						<a href="my_order_details.html" class="wait-pay-btn waitActive">立即支付</a>
+						<a href="javascript:void(0)" class="wait-cancel-btn">取消订单</a>
+					</p>
+				</li>
+				<li>
+					<p class="clearfix">
+						<span class="goods-order-number">订单编号：SHYJ12552</span>
+						<span>待发货</span>
+					</p>
+					<a href="javascript:void(0)" class="goods-info-card">
+						<ul class="goods-info-list clearfix">
+							<li class="left">
+								<img src="../img/life_food1.png">
+							</li>
+							<li class="right">
+								<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+								<p class="wait-goods-price">&yen;29.5</p>
+								<span class="wait-goods-number">&times;&nbsp;2</span>
+							</li>
+						</ul>
+					</a>
+					<p class="wait-operation-wrap clearfix">
+						<span>共2件</span>
+						<span>合计：&yen;13</span>
+						<a href="javascript:void(0)" class="wait-pay-btn waitActive" id="wait-pay-btn">立即支付</a>
+						<a href="javascript:void(0)" class="wait-cancel-btn" id="wait-cancel-btn">取消订单</a>
+					</p>
+				</li>
+			</ul>
+			<!-- 待发货： -->
+			<ul class="tab-inner wait-send-wrap">
+				<li>
+					<p class="clearfix">
+						<span class="goods-order-number">订单编号：SHYJ12552</span>
+						<span>待发货</span>
+					</p>
+					<a href="javascript:void(0)" class="goods-info-card">
+						<ul class="goods-info-list clearfix">
+							<li class="left">
+								<img src="../img/life_food1.png">
+							</li>
+							<li class="right">
+								<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+								<!-- <p class="goods-size-type">规格：<span>1盒6片</span></p> -->
+								<p class="wait-goods-price">&yen;29.5</p>
+								<span class="wait-goods-number">&times;&nbsp;2</span>
+							</li>
+						</ul>
+					</a>
+					<p class="wait-operation-wrap clearfix">
+						<span>共2件</span>
+						<span>合计：&yen;13</span>
+					</p>
+				</li>
+			</ul>
+			<!-- 待收货： -->
+			<ul class="tab-inner recerive-wait-wrap">
+				<li>
+					<p class="clearfix">
+						<span class="goods-order-number">订单编号：SHYJ12552</span>
+						<span>待收货</span>
+					</p>
+					<a href="javascript:void(0)" class="goods-info-card">
+						<ul class="goods-info-list clearfix">
+							<li class="left">
+								<img src="../img/life_food1.png">
+							</li>
+							<li class="right">
+								<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+								<p class="wait-goods-price">&yen;29.5</p>
+								<span class="wait-goods-number">&times;&nbsp;2</span>
+							</li>
+						</ul>
+					</a>
+					<p class="wait-operation-wrap clearfix">
+						<span>共2件</span>
+						<span>合计：&yen;13</span>
+						<a href="javascript:void(0)" class="wait-pay-btn waitActive" id="confirm-receive-btn">确认收货</a>
+					</p>
+				</li>
+			</ul>
+			<!-- 已完成： -->
+			<ul class="tab-inner finish-goods-wrap">
+				<li>
+					<p class="clearfix">
+						<span class="goods-order-number">订单编号：SHYJ12552</span>
+						<span>待评价</span>
+					</p>
+					<a href="javascript:void(0)" class="goods-info-card">
+						<ul class="goods-info-list clearfix">
+							<li class="left">
+								<img src="../img/life_food1.png">
+							</li>
+							<li class="right">
+								<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+								<!-- <p class="goods-size-type">规格：<span>1盒6片</span></p> -->
+								<p class="wait-goods-price">&yen;29.5</p>
+								<span class="wait-goods-number">&times;&nbsp;2</span>
+							</li>
+						</ul>
+					</a>
+					<p class="wait-operation-wrap clearfix">
+						<span>共2件</span>
+						<span>合计：&yen;13</span>
+						<a href="javascript:void(0)" class="wait-pay-btn waitActive">删除</a>
+						<a href="javascript:void(0)" class="wait-cancel-btn">去评价</a>
+					</p>
+				</li>
+			</ul>
+			<!-- 退货/售后： -->
+			<ul class="tab-inner return-goods-wrap">
+				<li>
+					<p class="clearfix">
+						<span class="goods-order-number">订单编号：SHYJ12552</span>
+						<span>退货中</span>
+					</p>
+					<a href="javascript:void(0)" class="goods-info-card">
+						<ul class="goods-info-list clearfix">
+							<li class="left">
+								<img src="../img/life_food1.png">
+							</li>
+							<li class="right">
+								<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+								<!-- <p class="goods-size-type">规格：<span>1盒6片</span></p> -->
+								<p class="wait-goods-price">&yen;29.5</p>
+								<span class="wait-goods-number">&times;&nbsp;2</span>
+							</li>
+						</ul>
+					</a>
+					<p class="wait-operation-wrap clearfix">
+						<span>共2件</span>
+						<span>合计：&yen;13</span>
+						<a href="javascript:void(0)" class="wait-pay-btn waitActive">删除</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".tab-click-btn-list").on("click","li",function(){
+				var index=$(this).index();
+				$(".tab-btn").removeClass("slideActive").eq(index).addClass("slideActive");
+				$(".tab-inner").hide().eq(index).show();
+			})
+			 // 待付款详情页跳转：
+			 $(".wait-pay-wrap").on("click","a.goods-info-card",function(){
+			 	location.href="my_order_details.html";
+			 })
+			 // 待发货页面的详情页跳转：
+			  $(".wait-send-wrap").on("click","a.goods-info-card",function(){
+			 	location.href="my_order_sendBefore.html";
+			 })
+			  // 待收货页面的详情页跳转：
+			  $(".recerive-wait-wrap").on("click","a.goods-info-card",function(){
+			 	location.href="my_order_sendAfter.html";
+			 })
+			  // 已完成的页面的详情页跳转：
+			  $(".finish-goods-wrap").on("click","a.goods-info-card",function(){
+			 	location.href="my_order_finish.html";
+			 })
+			  // 退货、售后的页面跳转：
+			  $(".return-goods-wrap").on("click","a.goods-info-card",function(){
+			  	location.href="my_order_return.html";
+			  })
+		})
+	</script>
+</body>
+</html>

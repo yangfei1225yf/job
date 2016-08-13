@@ -1,0 +1,166 @@
+body{
+	background-color: #f1f2f3;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+a{	
+	color: #333;
+	text-decoration: none;
+}
+/*上部的点击切换部分*/
+ul.tab-click-btn-list{
+	height: 46px;
+	line-height: 46px;
+	border-bottom: 2px solid #e8e9ea;
+	background-color: white;
+}
+ul.tab-click-btn-list>li{
+	float: left;
+	width: 20%;
+	text-align: center;
+
+}
+ul.tab-click-btn-list>li>a{
+	display: inline-block;
+	height: 46px;
+	width: 100%;
+	text-align: center;
+	line-height: 46px;
+	font-size: 1.4rem;
+	color: #49494b;
+	overflow: hidden;
+}
+ul.tab-click-btn-list>li>a.slideActive{
+	border-bottom: 3px solid #ee8900;
+}
+/*tab切换的内容区样式：*/
+ul.tab-inner{
+	padding-top:2.6%;
+}
+.tab-inner>li{
+	margin-bottom: 2.6%;
+	box-sizing: border-box;
+	padding:0 2.6%;
+	border-top:1px solid #e8e9ea;
+	border-bottom:1px solid #e8e9ea;
+	background-color: white;
+}
+.tab-inner>li>p>a{
+	display: block;
+}
+.tab-inner>li>p{
+	position: relative;
+	font-size: 1.4rem;
+	color: #4b4c4d;
+	height: 38px;
+	line-height: 38px;
+}
+span.goods-order-number{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.tab-inner>li>p>span:last-child{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 38px;
+	line-height: 38px;
+	color: #ef9b37;
+}
+ul.goods-info-list{
+	position: relative;
+	padding:3% 0;
+	border-top:1px solid #e8e9ea;
+	border-bottom:1px solid #e8e9ea;
+}
+.goods-info-list>li:first-child{
+	float: left;
+	width: 20%;
+}
+.goods-info-list>li:first-child>img{
+	width: 100%;
+	/*min-height: 76px;*/
+}
+.goods-info-list>li:last-child{
+	float: right;
+	width: 78%;
+	padding-top:2%;
+}
+.goods-info-list>li:last-child>h3{
+	width: 68%;
+	font-size: 1.6rem;
+	/*单行省略：*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*p.goods-size-type{
+	color: #818283;
+	font-size: 1.4rem;
+}*/
+p.wait-goods-price{
+	font-size: 1.4rem;
+	color: #d50000;
+	margin-top:3.6%;
+}
+.wait-goods-number{
+	position: absolute;
+	bottom: 10%;
+	right: 10px;
+	font-size: 1.6rem;
+}
+p.wait-operation-wrap{
+	height: 34px;
+	line-height: 34px;
+	padding:5px;
+}
+.wait-operation-wrap>span{
+	color: #414243;
+	font-size: 1.6rem;
+}
+.wait-operation-wrap>a{
+	display: inline-block;
+	width: 22%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:2px solid #babbbc;
+	border-radius: 6px;
+	color: #626364;
+}
+.wait-operation-wrap>a.waitActive{
+	border:2px solid #f0b283;
+	color: #ee962e;
+}
+a.wait-cancel-btn{
+	float: right;
+	margin-right: 3.2%;
+}
+a.wait-pay-btn{
+	float: right;
+}
+/*待付款：*/
+ul.wait-pay-wrap{
+	/*display: none;*/
+}
+/*待发货：*/
+ul.wait-send-wrap{
+	display: none;
+}
+/*待收货：*/
+ul.recerive-wait-wrap{
+	display: none;
+}
+/*已完成：*/
+ul.finish-goods-wrap{
+	display: none;
+}
+/*退货中：*/
+ul.return-goods-wrap{
+	display: none;
+}
+

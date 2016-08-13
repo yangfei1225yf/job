@@ -173,14 +173,17 @@
 			// 分享
 			$(".share").click(function() {
 				$("#mask_share").show();
+				// 弹窗显示，屏幕禁止滑动
 				document.addEventListener("touchmove",eventDefault,false);
 			});
 			$(".share_cancel").click(function() {
 				$("#mask_share").hide();
+				// 弹窗隐藏，屏幕恢复滑动
 				document.removeEventListener("touchmove",eventDefault,false);
 			});
 			// 加入购物车
 			$(".shop_car_btn").on("click",function() {
+				$(".input_num").val("1");
 				$("#mask_car").show();
 				document.addEventListener("touchmove",eventDefault,false);
 			});

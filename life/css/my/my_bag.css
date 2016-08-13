@@ -31,25 +31,25 @@ body {
 .pay_way p {
 	position: relative;
 	line-height: 50px;
-	text-indent: 5rem;
+	text-indent: 4rem;
 }
 
 .pay_way p:before {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 5px;
-	width: 40px;
-	height: 40px;
+	top: 10px;
+	width: 32px;
+	height: 32px;
 	background: url(../../img/icon-all.png) no-repeat;
-	background-size: 660%;
+	background-size: 216px 226px;
 	
 }
 .pay_way p.way1:before {
-	background-position: 1px -201px;
+	background-position: 0px -165px;
 }
 .pay_way p.way2:before {
-	background-position: -38px -201px;
+	background-position: -31px -165px;
 }
 .pay_way p:nth-child(1) {	
 	border-bottom: 1px solid #ccc;

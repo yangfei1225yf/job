@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>订单详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/my/my_order_siblings.css">
+</head>
+<body>
+	<!-- 头部： -->
+	<header>
+		<div class="header">
+			<a class="back" href="javascript:history.back(-1);"></a>
+			<div class="title">订单详情</div>
+		</div>
+	</header>
+	<div class="my-order-finish-page">
+		<ul class="order-user-info">
+			<li>
+				<span>刘晓心</span>
+				<span>13562021254</span>
+			</li>
+			<li>广州市天河区东圃时代TIT广场</li>
+		</ul>
+		<ul class="order-goods-info">
+			<li class="clearfix">
+				<span class="left">购买商品</span>
+				<span class="right">待收货</span>
+				<a href="javascript:void(0)" class="return-request-btn">申请退货</a>
+			</li>
+			<li class="goods-info-wrap">
+				<a href="javascript:void(0)" class="clearfix">
+					<img src="../img/life_food1.png" class="left" class="left">
+					<div class="right">
+						<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+						<p class="wait-goods-size">规格：<span>1盒6片</span></p>
+						<p class="wait-goods-price">&yen;29.5</p>
+						<span class="wait-goods-number">&times;&nbsp;2</span>
+					</div>
+				</a>
+			</li>
+			<li class="freight-cost clearfix">
+				<span class="left">运费：</span>
+				<span class="right">&yen;10</span>
+			</li>
+			<li class="goods-tips">
+				<span>备注：</span>
+				<span></span>
+			</li>
+		</ul>
+		<ul class="order-info">
+			<li>订单信息</li>
+			<li>订单编号： SKYJ12525441</li>
+			<li>创建时间：2015-10-02   12:20</li>
+			<li>付款时间：2015-10-02   12:36</li>
+			<li>物流信息：申通物流    5221255142</li>
+			<li>收货时间：2015-10-02   12:36</li>
+		</ul>
+		<!-- 退货的蒙层： -->
+		<div class="mask">
+			<div class="inner">
+				<div class="alert">
+					<p class="alert-title clearfix">申请退款
+						<span class="close-btn">&times;</span>
+					</p>
+					<ul class="return-info-wrap">
+						<li>
+							<span>退货原因*：</span>
+							<div class="select-show clearfix">
+								<span class="selected-option">请选择退货原因</span>
+								<img src="../img/icon-select.png" alt="">
+								<ul class="select-wrap">
+									<li>收到商品破损</li>
+									<li>商品发错/漏发</li>
+									<li>收到商品描述不符</li>
+									<li>商品质量问题</li>
+								</ul>
+							</div>
+							<span class="select-tips">*选项必填</span>
+						</li>
+						<li>
+							<span>退款金额*：</span>
+							<input type="text">
+						</li>
+						<li class="refund-info">
+							<span> 退款说明：</span>
+							<textarea name="" id="" class=""></textarea>
+						</li>
+						<li class="updata-img">
+							<span>上传凭证：</span>
+							<a href="javascript:void(0)" class="up-img-btn">选择要上传的图片</a>
+							<input type="file" accept="image/*" multiple="" class="up-img-input"> <br/>
+							<p class="up-img-tips">每张图片大小不超过5M，最多3张，支持JPG、PNG、BMP格式</p>
+						</li>
+						<li class="updata-img-wrap">
+							
+						</li>
+					</ul>
+					<a href="javascript:void(0)" class="pay_btn assess-submit-btn">提交</a>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="pay_btn now-go-assess">去评价</a>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".now-go-assess").on("click",function(){
+				location.href="my_order_finish_goAssess.html";
+			})
+			$(".select-show").on("click",function(){
+				$(".select-wrap").toggleClass("display");
+				$(".select-wrap").on("click","li",function(){
+					$(".selected-option").text($(this).text());
+				})
+			})
+			$(".up-img-btn").on("click",function(){
+				$(".up-img-input").trigger("click");
+			})
+			$(".return-request-btn").on("click",function(){
+				$(".mask").show();
+			})
+			$(".close-btn").on("click",function(){
+				$(".mask").hide();
+			})
+			//选择本地图片后，显示图片的缩略图：
+			$(".up-img-input").on("change",function(){
+				var files=this.files;
+				$(".updata-img-wrap").html("");
+				for(var i=0;i<files.length;i++){
+					//显示上传图片的缩略图：
+					var url=window.URL || window.webkitURL;
+					if(url){
+						var src=url.createObjectURL(files[i]);
+						var img=new Image();
+						img.src=src;
+						img.onload=function(){
+							//图片加载完毕之后，释放资源：
+							url.revokeObjectURL(src);
+						}
+						$(".updata-img-wrap").append(img);
+					}else if(window.FileReader){
+						var fr=new FileReader();
+						fr.readAsDataURL(files[i]);//将图片文件转换成base64位
+						fr.onload=function(e){
+							var img=new Image();
+							img.src=this.result;
+							$(".updata-img-wrap").append(img);
+						}
+					}
+				}
+			})
+		})
+	</script>
+</body>
+</html>
