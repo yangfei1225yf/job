@@ -14,6 +14,6 @@
    [生活一家](https://yangfei1225yf.github.io/job/life)
 ## vivo 
    [找徐峥](https://yangfei1225yf.github.io/job/vivo)
-
+	[完整版](https://yangfei1225yf.github.io/job/zhaoXZ)
 ## imagination	
    [创想家盛典](https://yangfei1225yf.github.io/job/imagination)
