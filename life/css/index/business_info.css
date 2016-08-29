@@ -46,7 +46,7 @@ body {
 	border-top: 1px solid #ccc;
 }
 .business_list>li>ul li:first-child {
-	border: none;
+	border-top: 0;
 }
 .pro_content {
 	width: 100%;
